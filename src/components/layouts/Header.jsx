@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { headerLinks } from "../../constants/constants.js";
 import Button from "../UI/Button.jsx";
 import NavCard from "./NavCard.jsx";
+import { TiThMenu } from "react-icons/ti";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -14,11 +15,11 @@ const Header = () => {
         <img
           src="https://codelynks.com/wp-content/uploads/2024/07/logo.svg"
           alt="logo"
-          className="className={`w-[100px] h-[40px] sm:w-[150px] sm:h-[55px] lg:w-[200px] lg:h-[65px] transition-all duration-500"
+          className="w-[150px] h-[55px] lg:w-[200px] lg:h-[65px]"
         />
 
         <div
-          className={`flex flex-col gap-8 md:flex-row md:items-center text-gray-800 md:z-auto md:static w-full md:w-auto pl-9 transition-all duration-500 ease-in ${
+          className={`hidden md:flex gap-8 md:items-center text-gray-800 md:z-auto md:static w-full md:w-auto pl-9 transition-all duration-500 ease-in ${
             showMenu ? "top-16" : "top-[-490px]"
           }`}
         >
@@ -55,8 +56,9 @@ const Header = () => {
             </div>
           ))}
         </div>
-        <div>
+        <div className="flex gap-4 justify-center items-center">
           <Button>Contact Us</Button>
+          <TiThMenu size={28} color="#333" className="block md:hidden"/>
         </div>
       </div>
     </nav>

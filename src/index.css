@@ -19,7 +19,7 @@
   }
   
   .container-1200{
-    @apply w-full md:max-w-xl lg:max-w-[1200px] p-2;
+    @apply w-full lg:max-w-[1200px] p-2;
   }
   
   .header-btn {
