@@ -18,11 +18,24 @@
     }
   }
   
-  .parent-container {
-    @apply bg-[rgba(255,255,255,1)] w-full md:max-w-xl lg:max-w-2xl p-2 flex justify-between;
+  .container-1200{
+    @apply w-full md:max-w-xl lg:max-w-[1200px] p-2;
   }
   
   .header-btn {
     @apply flex items-center bg-primary text-white p-2.5 rounded hover:brightness-125 hover:shadow-md;
   }
-  
+
+
+  .sub-menu::after{
+    content: "";
+    display: inline-block;
+    background: url(https://codelynks.com/wp-content/uploads/2024/11/Group-1000011428.svg) no-repeat;
+    position: absolute !important;
+    top: -33px !important;
+    width: 46px;
+    left: 164px;
+    height: 41px;
+    clear: both;
+    z-index: 99999 !important;
+  }
