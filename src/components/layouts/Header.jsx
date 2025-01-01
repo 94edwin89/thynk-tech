@@ -44,7 +44,7 @@ const Header = () => {
   },[location])
 
   return (
-    <nav className="w-full bg-white flex justify-center shadow-md">
+    <nav className="w-full bg-white flex justify-center shadow-md fixed top-0 left-0 right-0 z-10">
       <div className="container-1200 flex justify-between p-3 items-center">
         <img
           src="https://codelynks.com/wp-content/uploads/2024/07/logo.svg"
@@ -71,7 +71,7 @@ const Header = () => {
                   color:
                     isActive && ["/", "/about-us"].includes(item.url)
                       ? "#36c0fa"
-                      : "gray",
+                      : "#333",
                 })}
               >
                 <div className={`flex ${showMenu ? 'justify-between' : 'justify-center gap-2'} items-center`}>

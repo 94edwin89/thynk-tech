@@ -21,6 +21,26 @@
   .container-1200{
     @apply w-full lg:max-w-[1200px] p-2;
   }
+
+  .page-container{
+    @apply pt-[90px] min-h-[80vh]
+  }
+
+  .dark-bg{
+    @apply bg-[#11190c]
+  }
+
+  .dark-text{
+    @apply text-[#11190c]
+  }
+
+ .light-text{
+  @apply text-slate-500
+ }
+
+ .light-bg{
+  @apply bg-slate-500
+ }
   
   .header-btn {
     @apply flex items-center bg-primary text-white p-1.5 sm:p-2.5 rounded hover:brightness-125 hover:shadow-md;
@@ -45,7 +65,7 @@
     position: absolute !important;
     top: -33px !important;
     width: 46px;
-    left: 164px;
+    left: 180px;
     height: 41px;
     clear: both;
     z-index: 99999 !important;

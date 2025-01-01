@@ -1,10 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import { Suspense } from "react";
-import Header from "./components/layouts/Header";
+import { lazy, Suspense } from "react";
 import Loader from "./components/Loader";
+import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
-import NotFound from "./pages/NotFound";
+
+const Home = lazy(() => import("./pages/Home"));
+const Services = lazy(() => import("./pages/Services"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/services/:id" element={<Services />}></Route>
           <Route path="/*" element={<NotFound />}></Route>
         </Routes>
         <Footer />
