@@ -1,13 +1,47 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { headerLinks } from "../../constants/constants.js";
 import Button from "../UI/Button.jsx";
 import NavCard from "./NavCard.jsx";
 import { TiThMenu } from "react-icons/ti";
+import { IoClose } from "react-icons/io5";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [hoveredItem, setHoveredItem] = useState("");
+  const [hideMenu, setHideMenu] = useState(false);
+
+  const location = useLocation()?.pathname;
+
+  const handleMenuClick = () => {
+    if(showMenu){
+      setHideMenu(true);
+      // for delaying the style changes
+      setTimeout(() => {
+        setShowMenu(false);
+        setHideMenu(false);
+      },300)
+    }else{
+      setShowMenu(true);
+    }
+  };
+
+
+  const handleShowSubmenu = (item) => {
+    if(!item.subMenu) 
+      return null;
+
+    if(hoveredItem === item.title) 
+      return setHoveredItem(null);
+
+    setHoveredItem(item.title);
+  }
+
+  useEffect(() => {
+    if(showMenu) 
+      setShowMenu(false);
+      setHideMenu(false);
+  },[location])
 
   return (
     <nav className="w-full bg-white flex justify-center shadow-md">
@@ -19,46 +53,61 @@ const Header = () => {
         />
 
         <div
-          className={`hidden md:flex gap-8 md:items-center text-gray-800 md:z-auto md:static w-full md:w-auto pl-9 transition-all duration-500 ease-in ${
-            showMenu ? "top-16" : "top-[-490px]"
+          className={`md:flex gap-8 md:items-center text-gray-800 md:z-auto md:static w-full md:w-[500px] pl-9 transition-all duration-300 ease-in ${
+            (showMenu && !hideMenu) ? "mobile-menu-container" : "absolute -top-[540px]"
           }`}
         >
           {headerLinks?.map((item) => (
             <div
               key={item.title}
-              className="relative"
-              onMouseEnter={() => setHoveredItem(item.title)}
+              className={`relative w-full ${showMenu && 'first:mt-10'}`}
               onMouseLeave={() => setHoveredItem(null)}
+              onClick={() => handleShowSubmenu(item)}
             >
               <NavLink
-                className="text-md font-medium group"
+                className="text-md font-medium"
                 to={item.url}
                 style={({ isActive }) => ({
-                  color: (isActive && ["/", "/about-us"].includes(item.url)) ? "#36c0fa" : "gray",
+                  color:
+                    isActive && ["/", "/about-us"].includes(item.url)
+                      ? "#36c0fa"
+                      : "gray",
                 })}
-                onClick={() => setShowMenu(false)}
               >
-               
-                  <div className="flex justify-center gap-2 items-center">
-                    <span className="hover:text-[#36c0fa]">{item.title}</span>
-                    {item?.subMenu && (
-                      <div className="w-2 h-2 rounded bg-primary"></div>
-                    )}
-                  </div>
-              
+                <div className={`flex ${showMenu ? 'justify-between' : 'justify-center gap-2'} items-center`}>
+                  <span className="hover:text-[#36c0fa]">{item.title}</span>
+                  {item?.subMenu && (
+                    <span className="w-2 h-2 rounded bg-primary"></span>
+                  )}
+                </div>
               </NavLink>
 
               {item.subMenu && hoveredItem === item.title && (
-                <div className="sub-menu absolute top-[40px] -left-[140px] bg-white shadow-lg rounded-md py-2 md:w-[400px]">
-                  {item.subMenu && hoveredItem === item.title && <NavCard navItem={item}/>}
+                <div className={`${!showMenu ? "sub-menu" :"mobile-sub-menu" } bg-white py-2`}>
+                  {item.subMenu && hoveredItem === item.title && (
+                    <NavCard navItem={item} showMenu={showMenu}/>
+                  )}
                 </div>
               )}
             </div>
           ))}
+          {showMenu && (
+            <IoClose
+              size={32}
+              color="#333"
+              className="block absolute right-3 top-5 md:hidden"
+              onClick={handleMenuClick}
+            />
+          )}
         </div>
-        <div className="flex gap-4 justify-center items-center">
+        <div className="flex gap-5 justify-center items-center">
           <Button>Contact Us</Button>
-          <TiThMenu size={28} color="#333" className="block md:hidden"/>
+            <TiThMenu
+              size={28}
+              color="#333"
+              className="block md:hidden"
+              onClick={handleMenuClick}
+            />
         </div>
       </div>
     </nav>

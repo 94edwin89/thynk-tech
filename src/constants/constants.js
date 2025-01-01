@@ -13,19 +13,19 @@ export const headerLinks = [
     subMenu: [
       {
         title: "Web Development",
-        url: "/services/web-dev",
+        url: "/web-dev",
         icon: GoBrowser,
         description: "Building modern and responsive web applications.",
       },
       {
         title: "App Development",
-        url: "/services/app-dev",
+        url: "/app-dev",
         icon: MdAppShortcut,
         description: "Creating native and cross-platform mobile apps.",
       },
       {
         title: "Search Engine Optimization",
-        url: "/services/seo",
+        url: "/seo",
         icon: TbSeo,
         description: "Improving visibility and search rankings.",
       },
@@ -33,7 +33,6 @@ export const headerLinks = [
   },
   {
     title: "Industries",
-    url: "/industries",
     subMenu: [
       {
         title: "Technology & Software Development",

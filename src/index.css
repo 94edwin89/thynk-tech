@@ -23,14 +23,25 @@
   }
   
   .header-btn {
-    @apply flex items-center bg-primary text-white p-2.5 rounded hover:brightness-125 hover:shadow-md;
+    @apply flex items-center bg-primary text-white p-1.5 sm:p-2.5 rounded hover:brightness-125 hover:shadow-md;
   }
 
+  .mobile-menu-container{
+    @apply absolute flex flex-col items-start gap-8 top-0 left-0 bg-white z-20 h-[100vh] w-[100vw] p-8;
+  }
+
+  .mobile-sub-menu{
+    @apply w-full
+  }
+
+  .sub-menu{
+    @apply absolute top-[40px] -left-[140px] shadow-lg rounded-md w-[400px]
+  }
 
   .sub-menu::after{
     content: "";
     display: inline-block;
-    background: url(https://codelynks.com/wp-content/uploads/2024/11/Group-1000011428.svg) no-repeat;
+    background: url("./assets/svgs/triangle.svg") no-repeat;
     position: absolute !important;
     top: -33px !important;
     width: 46px;
