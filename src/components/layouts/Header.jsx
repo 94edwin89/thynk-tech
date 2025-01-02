@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { headerLinks } from "../../constants/constants.js";
 import Button from "../UI/Button.jsx";
 import NavCard from "./NavCard.jsx";
@@ -12,6 +12,7 @@ const Header = () => {
   const [hideMenu, setHideMenu] = useState(false);
 
   const location = useLocation()?.pathname;
+  const navigate = useNavigate();
 
   const handleMenuClick = () => {
     if(showMenu){
@@ -44,7 +45,7 @@ const Header = () => {
   },[location])
 
   return (
-    <nav className="w-full bg-white flex justify-center shadow-md fixed top-0 left-0 right-0 z-10">
+    <nav className="w-full bg-white flex justify-center shadow-md sticky top-0 left-0 right-0 z-10">
       <div className="container-1200 flex justify-between p-3 items-center">
         <img
           src="https://codelynks.com/wp-content/uploads/2024/07/logo.svg"
@@ -101,7 +102,7 @@ const Header = () => {
           )}
         </div>
         <div className="flex gap-5 justify-center items-center">
-          <Button>Contact Us</Button>
+          <Button onClick={() => navigate("/contact")}>Contact Us</Button>
             <TiThMenu
               size={28}
               color="#333"
