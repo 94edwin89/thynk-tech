@@ -35,11 +35,15 @@
   }
 
  .light-text{
-  @apply text-slate-500
+  @apply text-gray-500
+ }
+
+ .extra-light-text{
+  @apply text-gray-50
  }
 
  .light-bg{
-  @apply bg-slate-500
+  @apply bg-gray-500
  }
   
   .header-btn {
