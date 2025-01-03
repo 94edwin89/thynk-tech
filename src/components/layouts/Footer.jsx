@@ -108,9 +108,25 @@ const Footer = () => {
               Subscribe to our newsletter for latest updates
             </h6>
             <div className="flex justify-between p-2 border-0 border-b border-b-gray-500">
-              <input type="email" className="bg-inherit border-none outline-none text-white" />
-              <FaArrowRight className="text-primary" size={20}/>
+              <input
+                type="email"
+                className="bg-inherit border-none outline-none text-white"
+              />
+              <FaArrowRight className="text-primary" size={20} />
             </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="flex justify-between items-center mt-6 flex-wrap">
+          <p className="light-text text-center text-sm">
+           Copyright &copy; thynktechnologies.com  {" "}
+            {new Date().getFullYear()}. All rights reserved
+          </p>
+          <div className="light-text text-sm">
+              <a href="/" className="hover:text-white mr-1">Terms of Use</a>
+              {" "}| {" "}
+              <a href="/" className="hover:text-white ml-1">Privacy Policy</a>
           </div>
         </div>
       </div>
