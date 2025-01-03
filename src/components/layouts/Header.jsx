@@ -64,6 +64,7 @@ const Header = () => {
   className={`w-full bg-white flex justify-center transition-all duration-300 ease-in ${
     isScrolled ? "fixed top-0 shadow-md z-50" : "absolute z-50"
   }`}
+  style={{ backgroundColor: "#fffeed" }}
 >
   <div className="container-1200 flex justify-between p-3 items-center">
     <img

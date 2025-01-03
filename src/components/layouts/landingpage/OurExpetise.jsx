@@ -26,6 +26,7 @@ function OurExpertise() {
     <div
       className="expertise-container relative h-screen w-full overflow-hidden"
       ref={ref}
+      style={{ backgroundColor: "#fffeed" }}
     >
       {/* Heading Section */}
       <div className="grid grid-flow-row gap-4">
