@@ -3,13 +3,12 @@ import { HiArrowRight, HiOutlineThumbUp } from "react-icons/hi";
 function LandingOne() {
   return (
     <section className=" bg-gray-0 p-8 rounded-lg flex flex-col items-center pt-[110px] h-[100vh] relative">
-      <div className="flex flex-col mb-8 w-full  max-w-4xl items-center text-center md:text-left p-8">
+      <div className="flex flex-col mb-8 w-full max-w-4xl items-center text-center md:text-left p-8">
         <h1 className="text-7xl font-bold text-gray-800 mb-4">
           <span className="font-light">We want your</span>
           <br />{" "}
-          <span>
-            <span className="font-light">idea to</span>{" "}
-            <strong className="text-blue-500">succeed</strong>{" "}
+          <span className="text-blue-500">
+            <span className="font-light">idea to</span> <strong>succeed</strong>
           </span>
         </h1>
 
