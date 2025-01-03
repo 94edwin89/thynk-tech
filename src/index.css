@@ -29,25 +29,29 @@
   @apply bg-[#11190c];
 }
 
-.dark-text {
-  @apply text-[#11190c];
-}
+  .dark-text{
+    @apply text-[#11190c]
+  }
 
-.light-text {
-  @apply text-slate-500;
-}
+ .light-text{
+  @apply text-gray-500
+ }
 
-.light-bg {
-  @apply bg-slate-500;
-}
+ .extra-light-text{
+  @apply text-gray-50
+ }
 
-.header-btn {
-  @apply flex items-center bg-primary text-white p-1.5 sm:p-2.5 rounded hover:brightness-125 hover:shadow-md;
-}
+ .light-bg{
+  @apply bg-gray-500
+ }
+  
+  .header-btn {
+    @apply flex items-center bg-primary text-white p-1.5 sm:p-2.5 rounded hover:brightness-125 hover:shadow-md;
+  }
 
-.mobile-menu-container {
-  @apply absolute flex flex-col items-start gap-8 top-0 left-0 bg-white z-20 h-[100vh] w-[100vw] p-8;
-}
+  .mobile-menu-container{
+    @apply absolute flex flex-col items-start gap-8 top-0 left-0 bg-white z-20 h-[100vh] w-[100vw] p-8;
+  }
 
 .mobile-sub-menu {
   @apply w-full;
