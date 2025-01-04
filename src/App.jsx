@@ -4,6 +4,7 @@ import Loader from "./components/Loader";
 import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
 import ContactUs from "./pages/ContactUs";
+import About from "./pages/About";
 
 const Home = lazy(() => import("./pages/Home"));
 const Services = lazy(() => import("./pages/Services"));
@@ -18,7 +19,8 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/services/:id" element={<Services />}></Route>
           <Route path="/*" element={<NotFound />}></Route>
-          <Route path="/contact" element={<ContactUs />}></Route>
+          <Route path="/contact-us" element={<ContactUs />}></Route>
+          <Route path="/about-us" element={<About />}></Route>
         </Routes>
         <Footer />
       </Suspense>

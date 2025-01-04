@@ -102,7 +102,7 @@ const Header = () => {
           )}
         </div>
         <div className="flex gap-5 justify-center items-center">
-          <Button onClick={() => navigate("/contact")}>Contact Us</Button>
+          <Button onClick={() => navigate("/contact-us")}>Contact Us</Button>
             <TiThMenu
               size={28}
               color="#333"

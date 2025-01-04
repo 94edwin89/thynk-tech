@@ -81,14 +81,15 @@ const ContactUs = () => {
                 <div className="flex justify-center gap-[30%]">
                     <div>
                         <h4 className="font-medium">INDIA:</h4>
-                        <p>
+                        <p className='mt-2'>
                             Office No.10-B1, Trans Asia Cyber Park, Infopark SEZ Phase-II,
+                            <br />
                             Ambalamedu P.O, Kochi, Kerala
                         </p>
                     </div>
                     <div className="social-media ">
                         <h4 className="font-medium">Social Media:</h4>
-                        <div className="flex gap-3">
+                        <div className="flex gap-5 mt-2">
                             <a
                                 href="#"
                                 className="text-black hover:text-gray-600 flex items-center"
