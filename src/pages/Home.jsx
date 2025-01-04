@@ -1,9 +1,19 @@
-import React from 'react'
+import LandingOne from "../components/layouts/landingpage/LandingOne";
+import LandingSecond from "../components/layouts/landingpage/LandingSecond";
+import OurExpetise from "../components/layouts/landingpage/OurExpetise";
+import OurServices from "../components/layouts/landingpage/OurServices";
 
-const Home = () => {
+
+
+function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <LandingOne />
+      <LandingSecond />
+      <OurExpetise/>
+      <OurServices/>
+    </>
+  );
 }
 
-export default Home
+export default Home;

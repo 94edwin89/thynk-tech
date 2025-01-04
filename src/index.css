@@ -1,34 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-
 @layer base {
-    body {
-      font-family: "Roboto", serif;
-    }
-    h1 {
-      @apply font-semibold 
-    }
+  body {
+    font-family: "Roboto", serif;
   }
-  
-  .container-1200{
-    @apply w-full lg:max-w-[1200px] p-2;
+  h1 {
+    @apply font-semibold;
   }
+}
 
-  .page-container{
-    @apply pt-[90px] min-h-[80vh]
-  }
+.container-1200 {
+  @apply w-full lg:max-w-[1200px] p-2;
+}
 
-  .dark-bg{
-    @apply bg-[#11190c]
-  }
+.page-container {
+  @apply pt-[90px] min-h-[80vh];
+}
+
+.dark-bg {
+  @apply bg-[#11190c];
+}
 
   .dark-text{
     @apply text-[#11190c]
@@ -54,23 +53,30 @@
     @apply absolute flex flex-col items-start gap-8 top-0 left-0 bg-white z-20 h-[100vh] w-[100vw] p-8;
   }
 
-  .mobile-sub-menu{
-    @apply w-full
-  }
+.mobile-sub-menu {
+  @apply w-full;
+}
 
-  .sub-menu{
-    @apply absolute top-[40px] -left-[140px] shadow-lg rounded-md w-[400px]
-  }
+.sub-menu {
+  @apply absolute top-[40px] -left-[140px] shadow-lg rounded-md w-[400px];
+}
 
-  .sub-menu::after{
-    content: "";
-    display: inline-block;
-    background: url("./assets/svgs/triangle.svg") no-repeat;
-    position: absolute !important;
-    top: -33px !important;
-    width: 46px;
-    left: 180px;
-    height: 41px;
-    clear: both;
-    z-index: 99999 !important;
-  }
+.sub-menu::after {
+  content: "";
+  display: inline-block;
+  background: url("./assets/svgs/triangle.svg") no-repeat;
+  position: absolute !important;
+  top: -33px !important;
+  width: 46px;
+  left: 180px;
+  height: 41px;
+  clear: both;
+  z-index: 99999 !important;
+}
+
+.primaryFont {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
