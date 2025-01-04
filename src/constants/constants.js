@@ -10,6 +10,10 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
+import webDev1 from "../assets/images/web_dev_1.jpg"
+import webDev2 from "../assets/images/web_dev_2.jpg"
+import webDev3 from "../assets/images/web_dev_3.jpg"
+
 export const headerLinks = [
   {
     title: "Home",
@@ -123,3 +127,21 @@ export const serviceLinks = [
     url : "/services"
   }
 ];
+
+export const webDevServices = [
+  {
+    title : "Poppie Hair & Makeup",
+    img: webDev1,
+    url : "https://www.poppiehairandmakeup.in/"
+  },
+  {
+    title : "Quality Fishnets",
+    img: webDev2,
+    url : "https://www.qualityfishnets.com/"
+  },
+  {
+    title : "Work 3",
+    img: webDev3,
+    url : "https://www.qualityfishnets.com/"
+  },
+]

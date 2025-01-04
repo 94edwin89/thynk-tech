@@ -74,3 +74,11 @@
     clear: both;
     z-index: 99999 !important;
   }
+
+  .header-3{
+    @apply leading-10 tracking-wide text-3xl font-bold
+  }
+
+  .header-4{
+    @apply leading-10 tracking-wide text-2xl font-bold
+  }
