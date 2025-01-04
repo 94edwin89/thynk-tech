@@ -13,6 +13,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);  // Track scroll state
 
   const location = useLocation()?.pathname;
+  const navigate = useNavigate();
 
   const handleMenuClick = () => {
     if (showMenu) {
