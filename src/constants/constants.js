@@ -65,23 +65,61 @@ export const headerLinks = [
 
 export const socialMediaLinks = [
   {
-    name : "Facebook",
-    url : "https://facebook.com",
-    icon : FaFacebookF
+    name: "Facebook",
+    url: "https://facebook.com",
+    icon: FaFacebookF,
   },
   {
-    name : "Twitter",
-    url : "https://x.com/?mx=2",
-    icon : BsTwitterX
+    name: "Twitter",
+    url: "https://x.com/?mx=2",
+    icon: BsTwitterX,
   },
   {
-    name : "LinkedIn",
-    url : "https://www.linkedin.com/",
-    icon : FaLinkedinIn
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/",
+    icon: FaLinkedinIn,
   },
   {
-    name : "Instagram",
-    url : "https://instagram.com",
-    icon : FaInstagram
+    name: "Instagram",
+    url: "https://instagram.com",
+    icon: FaInstagram,
   },
+];
+
+export const quickLinks = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "About Us",
+    url: "/about-us",
+  },
+  {
+    title: "Services",
+    url: "/services",
+  },
+  {
+    title: "Contact Us",
+    url: "/contact-us",
+  },
+];
+
+export const serviceLinks = [
+  {
+    title : "App Development",
+    url : "/services/app-dev"
+  },
+  {
+    title : "Web Developemnt",
+    url : "/services/web-dev",
+  },
+  {
+    title : "Search Engine Optimization",
+    url : "/services/seo"
+  },
+  {
+    title : "Other Services",
+    url : "/services"
+  }
 ];
