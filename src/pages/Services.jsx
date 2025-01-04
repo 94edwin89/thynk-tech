@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import serviceImg1 from "../assets/images/service_img_1.jpg";
@@ -8,10 +8,20 @@ import serviceImg4 from "../assets/images/service_seo.png";
 import { webDevServices } from "../constants/constants";
 import ServiceCard from "../components/services/ServiceCard";
 const Services = () => {
-  const params = useParams();
+  const id = useParams().id;
+  
+  useEffect(() => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }, [id]);
 
   return (
-    <div className="page-container flex flex-col">
+    <div className="page-container flex flex-col" id="web-dev">
       {/* Header Section */}
       <div className="container-1200 grid grid-cols-1 md:grid-cols-2 gap-7 items-center mx-auto px-2">
         <motion.div
@@ -106,7 +116,7 @@ const Services = () => {
       </div>
 
       {/* App Dev */}
-      <div className="flex flex-col gap-10 my-10">
+      <div id="app-dev" className="flex flex-col gap-10 py-10">
         <div className="container-1200 mx-auto flex-flex-col gap-8 px-2 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center">
             <motion.div
@@ -163,7 +173,7 @@ const Services = () => {
       </div>
 
       {/* SEO */}
-      <div className="flex flex-col gap-10 my-10">
+      <div id="seo" className="flex flex-col gap-10 py-10">
         <div className="container-1200 mx-auto flex-flex-col gap-8 px-2 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center">
           <motion.img
