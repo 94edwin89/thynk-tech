@@ -130,16 +130,19 @@ export const serviceLinks = [
 
 export const webDevServices = [
   {
+    id:0,
     title : "Poppie Hair & Makeup",
     img: webDev1,
     url : "https://www.poppiehairandmakeup.in/"
   },
   {
+    id:1,
     title : "Quality Fishnets",
     img: webDev2,
     url : "https://www.qualityfishnets.com/"
   },
   {
+    id:2,
     title : "Work 3",
     img: webDev3,
     url : "https://www.qualityfishnets.com/"

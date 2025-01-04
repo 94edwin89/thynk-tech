@@ -118,7 +118,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="flex justify-between items-center mt-6 flex-wrap">
+        <div className="flex justify-between items-center mt-6 flex-wrap gap-5">
           <p className="light-text text-center text-sm">
            Copyright &copy; thynktechnologies.com  {" "}
             {new Date().getFullYear()}. All rights reserved
