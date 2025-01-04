@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { headerLinks } from "../../constants/constants.js";
 import Button from "../UI/Button.jsx";
 import NavCard from "./NavCard.jsx";
@@ -120,7 +120,7 @@ const Header = () => {
       )}
     </div>
     <div className="flex gap-5 justify-center items-center">
-      <Button>Contact Us</Button>
+      <Button><Link to="/contact-us">Contact Us</Link></Button>
       <TiThMenu
         size={28}
         color="#333"

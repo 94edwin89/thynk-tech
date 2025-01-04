@@ -61,6 +61,7 @@
   @apply absolute top-[40px] -left-[140px] shadow-lg rounded-md w-[400px];
 }
 
+
 .sub-menu::after {
   content: "";
   display: inline-block;
@@ -80,3 +81,10 @@
   font-weight: 100;
   font-style: normal;
 }
+  .header-3{
+    @apply leading-10 tracking-wide text-3xl font-bold
+  }
+
+  .header-4{
+    @apply leading-10 tracking-wide text-2xl font-bold
+  }
