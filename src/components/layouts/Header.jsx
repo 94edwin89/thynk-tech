@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { headerLinks } from "../../constants/constants.js";
 import Button from "../UI/Button.jsx";
 import NavCard from "./NavCard.jsx";
@@ -13,6 +13,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);  // Track scroll state
 
   const location = useLocation()?.pathname;
+  const navigate = useNavigate();
 
   const handleMenuClick = () => {
     if (showMenu) {
