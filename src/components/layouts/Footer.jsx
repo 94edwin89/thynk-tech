@@ -123,7 +123,7 @@ const Footer = () => {
            Copyright &copy; thynktechnologies.com  {" "}
             {new Date().getFullYear()}. All rights reserved
           </p>
-          <div className="light-text text-sm">
+          <div className="light-text text-sm text-center sm:text-right w-full sm:w-1/2">
               <a href="/" className="hover:text-white mr-1">Terms of Use</a>
               {" "}| {" "}
               <a href="/" className="hover:text-white ml-1">Privacy Policy</a>
