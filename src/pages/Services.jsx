@@ -1,34 +1,45 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+
 import serviceImg1 from "../assets/images/service_img_1.jpg";
 import serviceImg2 from "../assets/images/service_web_dev.png";
 import serviceImg3 from "../assets/images/service_app_dev.png";
 import serviceImg4 from "../assets/images/service_seo.png";
+
 import { webDevServices } from "../constants/constants";
 import ServiceCard from "../components/services/ServiceCard";
+
 const Services = () => {
   const id = useParams().id;
-  
+
+  // for moving the area based on the id.
   useEffect(() => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   }, [id]);
 
+const generateMotionStyles = (right=false) => {
+
+    return {
+      initial: { opacity: 0, x : right ? 100 : -100},
+      whileInView: { opacity: 1, x: 0 },
+      transition: { duration: 1 },
+    }
+  };
+
   return (
-    <div className="page-container flex flex-col" id="web-dev">
+    <div className="page-container flex flex-col overflow-hidden" id="web-dev">
       {/* Header Section */}
       <div className="container-1200 grid grid-cols-1 md:grid-cols-2 gap-7 items-center mx-auto px-2">
         <motion.div
-          className="flex flex-col gap-8"
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          className="flex flex-col gap-8 px-4"
+          {...(generateMotionStyles())}
         >
           <h3 className="header-3">
             We Build Software Solutions That Solve Our Clients Business
@@ -46,9 +57,7 @@ const Services = () => {
           src={serviceImg1}
           alt="Service Image"
           className="w-full h-full md:h-[450px] md:w-[650px]"
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          {...(generateMotionStyles(true))}
         />
       </div>
 
@@ -58,9 +67,9 @@ const Services = () => {
         <div className="container-1200 mx-auto flex-flex-col gap-8 px-2">
           <motion.h3
             className="header-3 text-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
+            initial={{ opacity: 0, scale:0.8 }}
+            whileInView={{ opacity: 1, scale:1 }}
+            transition={{ duration: 3 }}
           >
             Our Services
           </motion.h3>
@@ -68,16 +77,12 @@ const Services = () => {
             <motion.img
               src={serviceImg2}
               alt="Service Image"
-              className="w-full h-full md:h-[400px] md:w-[450px] object-cover"
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              className="w-full h-auto md:h-[400px] md:w-[450px] object-cover"
+              {...(generateMotionStyles())}
             />
             <motion.div
-              className="flex flex-col gap-8"
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              className="flex flex-col gap-8 px-4"
+              {...(generateMotionStyles(true))}
             >
               <h3 className="header-3">
                 <span className="text-primary">Web Development:</span> Building
@@ -120,10 +125,8 @@ const Services = () => {
         <div className="container-1200 mx-auto flex-flex-col gap-8 px-2 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center">
             <motion.div
-              className="flex flex-col gap-8"
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              className="flex flex-col gap-8 px-4"
+              {...(generateMotionStyles())}
             >
               <h3 className="header-3">
                 <span className="text-primary">App Development:</span>{" "}
@@ -134,20 +137,14 @@ const Services = () => {
                 mobile applications that offer exceptional user experiences
                 across platforms. From intuitive design to seamless
                 functionality, our team creates high-performance apps tailored
-                to your business needs. Whether you need a native mobile app for
-                iOS or Android, or a cross-platform solution, we ensure your app
-                is scalable, secure, and optimized for performance. Let us help
-                you turn your app idea into a reality, enhancing customer
-                engagement and driving business growth.
+                to your business needs.
               </p>
             </motion.div>
             <motion.img
               src={serviceImg3}
               alt="Service Image"
-              className="w-full h-full md:h-[400px] md:w-[500px] object-contain"
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              className="w-full h-auto md:h-[400px] md:w-[500px] object-contain"
+              {...(generateMotionStyles(true))}
             />
           </div>
         </div>
@@ -176,19 +173,15 @@ const Services = () => {
       <div id="seo" className="flex flex-col gap-10 py-10">
         <div className="container-1200 mx-auto flex-flex-col gap-8 px-2 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center">
-          <motion.img
+            <motion.img
               src={serviceImg4}
               alt="Service Image"
               className="w-full h-full md:h-[400px] md:w-[500px] object-contain"
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              {...(generateMotionStyles())}
             />
             <motion.div
-              className="flex flex-col gap-8"
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              className="flex flex-col gap-8 px-4"
+              {...(generateMotionStyles(true))}
             >
               <h3 className="header-3">
                 <span className="text-primary">SEO Services:</span> Boosting
@@ -200,12 +193,7 @@ const Services = () => {
                 website's ranking on search engines. Our team employs a
                 combination of on-page optimization, technical SEO, and quality
                 content strategies to drive organic traffic and increase
-                conversions. Whether you’re aiming to rank higher for
-                competitive keywords, attract local customers, or improve
-                overall site performance, we craft custom SEO solutions that
-                align with your business objectives. Let us help you increase
-                your visibility, attract more visitors, and grow your business
-                online.
+                conversions.
               </p>
             </motion.div>
           </div>
@@ -230,6 +218,7 @@ const Services = () => {
           </div>
         </div> */}
       </div>
+      
     </div>
   );
 };

@@ -82,9 +82,9 @@
   font-style: normal;
 }
   .header-3{
-    @apply leading-10 tracking-wide text-3xl font-bold
+    @apply leading-8 sm:leading-10 tracking-wide text-2xl sm:text-3xl font-bold
   }
 
   .header-4{
-    @apply leading-10 tracking-wide text-2xl font-bold
+    @apply leading-8  sm:leading-10 tracking-wide text-2xl font-bold
   }
