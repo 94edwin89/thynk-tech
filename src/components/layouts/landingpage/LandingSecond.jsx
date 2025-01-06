@@ -37,8 +37,8 @@ function LandingSecond() {
       <div className="grid grid-flow-col gap-2 p-9 bg-gray-900 text-gray-200">
         <div>
           <img
-            className="rounded-3xl w-[350px] h-[550px]"
-            src="https://via.placeholder.com/400x250"
+            className=" w-[450px] h-[550px]"
+            src="public/office-image.png"
             alt="400x400"
           />
         </div>
@@ -46,7 +46,7 @@ function LandingSecond() {
         <div>
           <div className="grid grid-flow-col gap-4">
             <div>
-              <p className="text-blue-400 font-extrabold pt-8">WHO WE ARE</p>
+              <p className="text-primary font-extrabold pt-8">WHO WE ARE</p>
               <h1 className="text-6xl">
                 We provide
                 <br />
@@ -54,7 +54,7 @@ function LandingSecond() {
                 <br />
                 <span className="flex">
                   your business{" "}
-                  <HiArrowCircleUp className=" text-blue-600 rotate-45" />
+                  <HiArrowCircleUp className=" text-primary rotate-45" />
                 </span>
               </h1>
               <p className="mt-3">
@@ -70,8 +70,8 @@ function LandingSecond() {
 
             <div className="mt-[80px]">
               <img
-                className="rounded-3xl"
-                src="https://via.placeholder.com/400x250"
+                
+                src="public/employee.png"
                 alt="400x400"
               />
             </div>
@@ -80,7 +80,7 @@ function LandingSecond() {
           <div className="flex justify-evenly p-6">
             <div>
               <h1 className="text-4xl">
-                <HiOutlineFaceSmile className="text-blue-500" />
+                <HiOutlineFaceSmile className="text-primary" />
                 Happy Clients
               </h1>
               <p>
@@ -90,7 +90,7 @@ function LandingSecond() {
             </div>
             <div>
               <h1 className="text-4xl">
-                <HiCalendarDateRange className=" text-blue-500" /> Experience
+                <HiCalendarDateRange className=" text-primary" /> Experience
               </h1>
               <p>
                 Developers experience delivering
