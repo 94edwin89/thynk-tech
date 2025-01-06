@@ -5,12 +5,13 @@ import Button from "../UI/Button.jsx";
 import NavCard from "./NavCard.jsx";
 import { TiThMenu } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
+import Logo from "./Logo.jsx";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [hoveredItem, setHoveredItem] = useState("");
   const [hideMenu, setHideMenu] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);  // Track scroll state
+  const [isScrolled, setIsScrolled] = useState(false); // Track scroll state
 
   const location = useLocation()?.pathname;
 
@@ -39,9 +40,9 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setIsScrolled(true);  // Header should have shadow and be fixed
+        setIsScrolled(true); // Header should have shadow and be fixed
       } else {
-        setIsScrolled(false);  // Header should not have shadow and fixed positioning
+        setIsScrolled(false); // Header should not have shadow and fixed positioning
       }
     };
 
@@ -59,78 +60,84 @@ const Header = () => {
   }, [location]);
 
   return (
-  
-<nav
-  className={`w-full bg-white flex justify-center transition-all duration-300 ease-in ${
-    isScrolled ? "fixed top-0 shadow-md z-50" : "absolute z-50"
-  }`}
-  style={{ backgroundColor: "#fffeed" }}
->
-  <div className="container-1200 flex justify-between p-3 items-center">
-    <img
-      src="https://codelynks.com/wp-content/uploads/2024/07/logo.svg"
-      alt="logo"
-      className="w-[150px] h-[55px] lg:w-[200px] lg:h-[65px]"
-    />
-
-    <div
-      className={`md:flex gap-8 md:items-center text-gray-800 md:z-auto md:static w-full md:w-[500px] pl-9 transition-all duration-300 ease-in ${
-        showMenu && !hideMenu ? "mobile-menu-container" : "absolute -top-[540px]"
+    <nav
+      className={`w-full bg-white flex justify-center transition-all duration-300 ease-in ${
+        isScrolled ? "fixed top-0 shadow-md z-50" : "absolute z-50"
       }`}
     >
-      {headerLinks?.map((item) => (
+      <div className="container-1200 flex justify-between p-3 items-center">
+        <Logo />
         <div
-          key={item.title}
-          className={`relative w-full ${showMenu && "first:mt-10"}`}
-          onMouseLeave={() => setHoveredItem(null)}
-          onClick={() => handleShowSubmenu(item)}
+          className={`md:flex gap-8 md:items-center text-gray-800 md:z-auto md:static w-full md:w-[500px] pl-9 transition-all duration-300 ease-in ${
+            showMenu && !hideMenu
+              ? "mobile-menu-container"
+              : "absolute -top-[540px]"
+          }`}
         >
-          <NavLink
-            className="text-md font-medium"
-            to={item.url}
-            style={({ isActive }) => ({
-              color:
-                isActive && ["/", "/about-us"].includes(item.url)
-                  ? "#36c0fa"
-                  : "#333",
-            })}
-          >
-            <div className={`flex ${showMenu ? "justify-between" : "justify-center gap-2"} items-center`}>
-              <span className="hover:text-[#36c0fa]">{item.title}</span>
-              {item?.subMenu && <span className="w-2 h-2 rounded bg-primary"></span>}
-            </div>
-          </NavLink>
+          {headerLinks?.map((item) => (
+            <div
+              key={item.title}
+              className={`relative w-full ${showMenu && "first:mt-10"}`}
+              onMouseLeave={() => setHoveredItem(null)}
+              onClick={() => handleShowSubmenu(item)}
+            >
+              <NavLink
+                className="text-md font-medium"
+                to={item.url}
+                style={({ isActive }) => ({
+                  color:
+                    isActive && ["/", "/about-us"].includes(item.url)
+                      ? "#36c0fa"
+                      : "#333",
+                })}
+              >
+                <div
+                  className={`flex ${
+                    showMenu ? "justify-between" : "justify-center gap-2"
+                  } items-center`}
+                >
+                  <span className="hover:text-[#36c0fa]">{item.title}</span>
+                  {item?.subMenu && (
+                    <span className="w-2 h-2 rounded bg-primary"></span>
+                  )}
+                </div>
+              </NavLink>
 
-          {item.subMenu && hoveredItem === item.title && (
-            <div className={`${!showMenu ? "sub-menu" : "mobile-sub-menu"} bg-white py-2`}>
               {item.subMenu && hoveredItem === item.title && (
-                <NavCard navItem={item} showMenu={showMenu} />
+                <div
+                  className={`${
+                    !showMenu ? "sub-menu" : "mobile-sub-menu"
+                  } bg-white py-2`}
+                >
+                  {item.subMenu && hoveredItem === item.title && (
+                    <NavCard navItem={item} showMenu={showMenu} />
+                  )}
+                </div>
               )}
             </div>
+          ))}
+          {showMenu && (
+            <IoClose
+              size={32}
+              color="#333"
+              className="block absolute right-3 top-5 md:hidden"
+              onClick={handleMenuClick}
+            />
           )}
         </div>
-      ))}
-      {showMenu && (
-        <IoClose
-          size={32}
-          color="#333"
-          className="block absolute right-3 top-5 md:hidden"
-          onClick={handleMenuClick}
-        />
-      )}
-    </div>
-    <div className="flex gap-5 justify-center items-center">
-      <Button><Link to="/contact-us">Contact Us</Link></Button>
-      <TiThMenu
-        size={28}
-        color="#333"
-        className="block md:hidden"
-        onClick={handleMenuClick}
-      />
-    </div>
-  </div>
-</nav>
-
+        <div className="flex gap-5 justify-center items-center">
+          <Button>
+            <Link to="/contact-us">Contact Us</Link>
+          </Button>
+          <TiThMenu
+            size={28}
+            color="#333"
+            className="block md:hidden"
+            onClick={handleMenuClick}
+          />
+        </div>
+      </div>
+    </nav>
   );
 };
 
