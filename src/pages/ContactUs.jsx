@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/f
 const ContactUs = () => {
 
     return (
-        <div className="contact-page-container p-6 ml-8 bg-white">
+        <div className="contact-page-container px-8 py-24 ml-8 bg-white">
             <h2 className='font-bold text-6xl mb-8'>Let`s talk!</h2>
             <div className="contact-info flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
                 <div className="contact-details text-gray-800">
@@ -69,7 +69,7 @@ const ContactUs = () => {
                         ></textarea>
                         <button
                             type="submit"
-                            className="bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600"
+                            className="bg-[#36c0fa] text-white py-2 px-6 rounded hover:bg-[#38a5d4]"
                         >
                             LET'S TALK
                         </button>
@@ -92,25 +92,25 @@ const ContactUs = () => {
                         <div className="flex gap-5 mt-2">
                             <a
                                 href="#"
-                                className="text-black hover:text-gray-600 flex items-center"
+                                className="text-[#1a485c] hover:text-gray-600 flex items-center"
                             >
                                 <FaFacebookF size={24} />
                             </a>
                             <a
                                 href="#"
-                                className="text-black hover:text-gray-600 flex items-center"
+                                className="text-[#1a485c] hover:text-gray-600 flex items-center"
                             >
                                 <FaTwitter size={24} />
                             </a>
                             <a
                                 href="#"
-                                className="text-black hover:text-gray-600 flex items-center"
+                                className="text-[#1a485c] hover:text-gray-600 flex items-center"
                             >
                                 <FaLinkedinIn size={24} />
                             </a>
                             <a
                                 href="#"
-                                className="text-black hover:text-gray-600 flex items-center"
+                                className="text-[#1a485c] hover:text-gray-600 flex items-center"
                             >
                                 <FaInstagram size={24} />
                             </a>
