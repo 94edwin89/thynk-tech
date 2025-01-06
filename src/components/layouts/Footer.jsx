@@ -7,6 +7,7 @@ import {
 } from "../../constants/constants.js";
 import indFlag from "../../assets/images/indflag.png";
 import { FaArrowRight } from "react-icons/fa6";
+import Logo from "./Logo.jsx";
 
 const Footer = () => {
   return (
@@ -15,11 +16,7 @@ const Footer = () => {
         {/* Logo and social Media Links */}
         <div className="flex flex-wrap justify-between items-center">
           {/* image */}
-          <img
-            src="https://codelynks.com/wp-content/uploads/2024/07/logo.svg"
-            alt="logo"
-            className="w-[150px] h-[55px]"
-          />
+          <Logo footer={true}/>
           {/* follow us */}
           <div className="flex items-center gap-8">
             <p className="uppercase light-text font-semibold hover:text-white">

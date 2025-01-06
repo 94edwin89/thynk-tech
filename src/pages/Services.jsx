@@ -7,8 +7,11 @@ import serviceImg2 from "../assets/images/service_web_dev.png";
 import serviceImg3 from "../assets/images/service_app_dev.png";
 import serviceImg4 from "../assets/images/service_seo.png";
 
+import serviceDevelopment from "../assets/images/service_development.png"
+
 import { webDevServices } from "../constants/constants";
 import ServiceCard from "../components/services/ServiceCard";
+import ServicesSwiper from "../components/services/ServiceSwiper";
 
 const Services = () => {
   const id = useParams().id;
@@ -89,7 +92,7 @@ const generateMotionStyles = (right=false) => {
                 Exceptional Online Experiences
               </h3>
               <p className="text-lg dark-text">
-                At ThynkTechnologies, we specialize in creating responsive,
+              <span className="text-4xl text-primary">A</span>t ThynkTechnologies, we specialize in creating responsive,
                 user-centric, and secure websites that deliver a seamless
                 experience across all devices. Whether you need a simple landing
                 page, a complex eCommerce platform, or a custom web application,
@@ -100,28 +103,13 @@ const generateMotionStyles = (right=false) => {
           </div>
         </div>
         {/* Web dev details section */}
-        <div className="dark-bg py-8 px-2">
-          <div className="container-1200 mx-auto flex flex-col">
-            <motion.h4
-              className="header-4 text-center text-white"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
-            >
-              Our <span className="italic"> Web Development </span>
-              Works
-            </motion.h4>
-            <div className="flex flex-wrap justify-center items-center md:gap-10">
-              {webDevServices?.map((service) => (
-                <ServiceCard key={service?.title} service={service} />
-              ))}
-            </div>
-          </div>
+        <div className="flex dark-bg w-full justify-between items-center p-8">
+          <img src={serviceDevelopment} className="w-full h-auto" />
         </div>
       </div>
 
       {/* App Dev */}
-      <div id="app-dev" className="flex flex-col gap-10 py-10">
+      <div id="app-dev" className="flex flex-col gap-10 sm:py-10">
         <div className="container-1200 mx-auto flex-flex-col gap-8 px-2 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center">
             <motion.div
@@ -133,7 +121,7 @@ const generateMotionStyles = (right=false) => {
                 Empowering Your Digital Transformation
               </h3>
               <p className="text-lg dark-text">
-                At ThynkTechnologies, we specialize in building cutting-edge
+                <span className="text-4xl text-primary">A</span>t ThynkTechnologies, we specialize in building cutting-edge
                 mobile applications that offer exceptional user experiences
                 across platforms. From intuitive design to seamless
                 functionality, our team creates high-performance apps tailored
@@ -148,7 +136,7 @@ const generateMotionStyles = (right=false) => {
             />
           </div>
         </div>
-        {/* app dev details section */}
+        {/* full dev details section */}
         <div className="dark-bg py-8 px-2">
           <div className="container-1200 mx-auto flex flex-col">
             <motion.h4
@@ -157,14 +145,9 @@ const generateMotionStyles = (right=false) => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
             >
-              Our <span className="italic"> App Development </span>
-              Works
+              What We've Done
             </motion.h4>
-            <div className="flex flex-wrap justify-center items-center md:gap-10">
-              {webDevServices?.map((service) => (
-                <ServiceCard key={service?.title} service={service} />
-              ))}
-            </div>
+            <ServicesSwiper webDevServices={webDevServices}/>
           </div>
         </div>
       </div>
@@ -188,7 +171,7 @@ const generateMotionStyles = (right=false) => {
                 Your Online Visibility
               </h3>
               <p className="text-lg dark-text">
-                At ThynkTechnologies, we specialize in enhancing your online
+              <span className="text-4xl text-primary">A</span>t ThynkTechnologies, we specialize in enhancing your online
                 presence through expert SEO strategies designed to improve your
                 website's ranking on search engines. Our team employs a
                 combination of on-page optimization, technical SEO, and quality

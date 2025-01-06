@@ -8,7 +8,7 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#36c0fa",
+        primary: "#3d77da",
       },
       visibility: ["group-hover"],
     },
