@@ -4,6 +4,7 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { TbSeo } from "react-icons/tb";
 import { HiDevicePhoneMobile } from "react-icons/hi2";
 import { MdOutlineWeb } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function LandingSecond() {
   const [isVisible, setIsVisible] = useState(false); // Tracks visibility
@@ -61,7 +62,9 @@ function LandingSecond() {
                 while fostering innovation. Here’s an overview of what we bring
                 to the table:
               </p>
-              <Button className="mt-4">VIEW ALL SERVICES</Button>
+              <Button className="mt-4">
+                <Link to="/services/web-dev">VIEW ALL SERVICES</Link>
+              </Button>
             </div>
             {/* --------------------------------------------------------------------------------- */}
             <div className="-ml-[180px]  mt-[80px] grid grid-flow-col ">

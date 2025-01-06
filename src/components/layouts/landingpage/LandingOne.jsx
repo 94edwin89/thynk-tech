@@ -1,4 +1,5 @@
 import { HiArrowRight, HiOutlineThumbUp } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function LandingOne() {
   return (
@@ -11,7 +12,8 @@ function LandingOne() {
           <span className="font-light">We want your</span>
           <br />{" "}
           <span className="text-primary">
-            <span className="font-light primary">idea to</span> <strong>succeed</strong>
+            <span className="font-light primary">idea to</span>{" "}
+            <strong>succeed</strong>
           </span>
         </h1>
 
@@ -33,9 +35,8 @@ function LandingOne() {
               }}
             />
 
-            <button className="w-[155px] h-[55px] absolute bottom-[-1px] right-[-3px] bg-primary text-white py-2 px-4 rounded-md hover:bg-[#28b1eb]"
-            >
-              REACH OUT
+            <button className="w-[155px] font-bold h-[55px] absolute bottom-[-1px] right-[-3px] bg-primary text-white py-2 px-4 rounded-md hover:bg-[#28b1eb]">
+              <Link to="/contact-us"> REACH OUT</Link>
             </button>
           </div>
         </div>
