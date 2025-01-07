@@ -16,11 +16,11 @@ const About = () => {
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <img src={svg} className="absolute left-[3%] z-[1] w-[43%]" />
                     <div className='z-10'>
-                        <h3 className="text-[#36c0fa] text-lg font-extrabold mb-2">ABOUT US</h3>
+                        <h3 className="text-[#3d77da] text-lg font-extrabold mb-2">ABOUT US</h3>
                         <h1 className="text-6xl font-extrabold leading-snug mb-6">
                             We deliver the mission-critical IT services that move the world.
                         </h1>
-                        <button className="text-white bg-[#36c0fa] px-6 py-3 rounded-full hover:bg-[#3dafe0] transition">
+                        <button className="text-white bg-primary px-6 py-3 rounded-full hover:bg-[#3dafe0] transition">
                             GET STARTED
                         </button>
                     </div>
@@ -33,12 +33,7 @@ const About = () => {
                         />
 
                         <p className="col-span-2 text-gray-600 leading-relaxed mt-4">
-                            Founded in 2012, Thynk has established itself as a leading
-                            technology consulting firm in India. Our company offers a wide range
-                            of technology solutions to clients in both the IT and non-IT
-                            industries. Our team consists of experts who bring a unique blend of
-                            technical know-how and domain knowledge to each project, providing
-                            our clients with an unbeatable advantage.
+                        Thynk Technologies is a premier technology consulting firm in India, delivering innovative solutions tailored to the needs of both IT and non-IT industries. With a team of skilled professionals combining technical expertise and industry insights, we empower our clients to achieve exceptional results and stay ahead in a competitive landscape.
                         </p>
                     </div>
                 </div>
@@ -132,8 +127,7 @@ const About = () => {
                                     Our Company Values
                                 </p>
                                 <p className="text-gray-600">
-                                    Embodying Our Core Values - The Guiding Principles for
-                                    Excellence and Integrity.
+                                Living Our Core Values – The Foundation of Excellence and Integrity in Everything We Do.
                                 </p>
                             </div>
                         </div>
@@ -147,7 +141,7 @@ const About = () => {
                                 />
                                 <p className="text-xl font-semibold mb-2">Transparency</p>
                                 <p className="text-gray-600">
-                                    Thynk prioritizes transparency in everything we do, building
+                                    Thynk Technologies prioritizes transparency in everything we do, building
                                     strong relationships with clients through honesty and openness.
                                     We work collaboratively to provide the best solutions for their
                                     business needs. Count on us to keep you informed and involved
@@ -165,7 +159,7 @@ const About = () => {
                                 />
                                 <p className="text-xl font-semibold mb-2">Commitment</p>
                                 <p className="text-gray-600">
-                                    Thynk exceeds expectations and delivers on commitments with
+                                    Thynk Technologies exceeds expectations and delivers on commitments with
                                     a proven track record of successful projects and satisfied
                                     clients. Partner with us for an unwavering commitment to your
                                     success.
@@ -182,7 +176,7 @@ const About = () => {
                                 />
                                 <p className="text-xl font-semibold mb-2">Over Delivery</p>
                                 <p className="text-gray-600">
-                                    Thynk delivers quality IT services and consulting, tailored
+                                    Thynk Technologies delivers  quality IT services and consulting, tailored
                                     to meet your unique needs. Our collaborative approach involves
                                     you every step of the way. With a decade of experience and the
                                     latest technologies, we exceed your expectations to help you

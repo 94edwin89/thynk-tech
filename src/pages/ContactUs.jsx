@@ -6,11 +6,11 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/f
 const ContactUs = () => {
 
     return (
-        <div className="contact-page-container px-8 py-24 ml-8 bg-white">
-            <h2 className='font-bold text-6xl mb-8'>Let`s talk!</h2>
+        <div className="contact-page-container px-8 ml-8 pt-28 pb-8 bg-white">
+            <h2 className='font-bold text-6xl mb-12'>Let`s talk!</h2>
             <div className="contact-info flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
                 <div className="contact-details text-gray-800">
-                    <p className="font-medium text-gray-500">Landline</p>
+                    <p className="font-medium text-gray-500 mt-4">Landline</p>
                     <p>
                         <ReactCountryFlag
                             countryCode="IN"
@@ -23,12 +23,12 @@ const ContactUs = () => {
                         />
                         +91 484 402 6866
                     </p>
-                    <p className="font-medium mt-4 text-gray-500">Email</p>
+                    <p className="font-medium mt-8 text-gray-500">Email</p>
                     <p>info@thynktechnolagies.com</p>
                 </div>
                 <div className="contact-form w-full md:w-2/3">
                     <form>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-6 mt-4">
                             <div className="relative">
                                 <input
                                     type="text"
@@ -69,55 +69,14 @@ const ContactUs = () => {
                         ></textarea>
                         <button
                             type="submit"
-                            className="bg-[#36c0fa] text-white py-2 px-6 rounded hover:bg-[#38a5d4]"
+                            className="bg-primary text-white py-2 px-6 mt-4 rounded hover:bg-[#38a5d4]"
                         >
                             LET'S TALK
                         </button>
                     </form>
                 </div>
             </div>
-            <hr className="border-gray-300 my-8" />
-            <div className="office-address text-sm text-gray-600">
-                <div className="flex justify-center gap-[30%]">
-                    <div>
-                        <h4 className="font-medium">INDIA:</h4>
-                        <p className='mt-2'>
-                            Office No.10-B1, Trans Asia Cyber Park, Infopark SEZ Phase-II,
-                            <br />
-                            Ambalamedu P.O, Kochi, Kerala
-                        </p>
-                    </div>
-                    <div className="social-media ">
-                        <h4 className="font-medium">Social Media:</h4>
-                        <div className="flex gap-5 mt-2">
-                            <a
-                                href="#"
-                                className="text-[#1a485c] hover:text-gray-600 flex items-center"
-                            >
-                                <FaFacebookF size={24} />
-                            </a>
-                            <a
-                                href="#"
-                                className="text-[#1a485c] hover:text-gray-600 flex items-center"
-                            >
-                                <FaTwitter size={24} />
-                            </a>
-                            <a
-                                href="#"
-                                className="text-[#1a485c] hover:text-gray-600 flex items-center"
-                            >
-                                <FaLinkedinIn size={24} />
-                            </a>
-                            <a
-                                href="#"
-                                className="text-[#1a485c] hover:text-gray-600 flex items-center"
-                            >
-                                <FaInstagram size={24} />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     )
 }
