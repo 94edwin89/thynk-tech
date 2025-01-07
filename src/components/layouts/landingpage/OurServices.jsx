@@ -4,6 +4,7 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { TbSeo } from "react-icons/tb";
 import { HiDevicePhoneMobile } from "react-icons/hi2";
 import { MdOutlineWeb } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function LandingSecond() {
   const [isVisible, setIsVisible] = useState(false); // Tracks visibility
@@ -45,7 +46,7 @@ function LandingSecond() {
         <div>
           <div className="grid grid-flow-col gap-4 items-center pl-40">
             <div>
-              <p className="text-blue-400 font-extrabold pt-8">OUR SERVICES</p>
+              <p className="text-primary font-extrabold pt-8">OUR SERVICES</p>
               <h1 className="text-6xl">
                 Explore our services
                 <br />
@@ -61,14 +62,16 @@ function LandingSecond() {
                 while fostering innovation. Here’s an overview of what we bring
                 to the table:
               </p>
-              <Button className="mt-4">VIEW ALL SERVICES</Button>
+              <Button className="mt-4">
+                <Link to="/services/web-dev">VIEW ALL SERVICES</Link>
+              </Button>
             </div>
             {/* --------------------------------------------------------------------------------- */}
             <div className="-ml-[180px]  mt-[80px] grid grid-flow-col ">
               {/* first section */}
               <div className="-mt-[80px]">
-                <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px] mb-3 hover:bg-blue-700 transition duration-300">
-                  <RiCustomerService2Fill className="text-6xl  text-blue-600 group-hover:text-white" />
+                <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px] mb-3 hover:bg-primary transition duration-300">
+                  <RiCustomerService2Fill className="text-6xl  text-primary group-hover:text-white" />
                   <h1 className="text-2xl text-black group-hover:text-white">
                     IT Infrastructure
                   </h1>
@@ -87,8 +90,8 @@ function LandingSecond() {
                   </p>
                 </div>
 
-                <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px]  hover:bg-blue-700 transition duration-300">
-                  <MdOutlineWeb className="text-6xl text-blue-600 group-hover:text-white" />
+                <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px]  hover:bg-primary transition duration-300">
+                  <MdOutlineWeb className="text-6xl text-primary group-hover:text-white" />
                   <h1 className="text-2xl text-black group-hover:text-white">
                     Web Development
                   </h1>
@@ -108,8 +111,8 @@ function LandingSecond() {
 
               {/* second section */}
               <div className="-ml-[80px] -mt-[30px]">
-                <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px] mb-3  hover:bg-blue-700 transition duration-300">
-                  <HiDevicePhoneMobile className="text-6xl text-blue-600 group-hover:text-white" />
+                <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px] mb-3  hover:bg-primary transition duration-300">
+                  <HiDevicePhoneMobile className="text-6xl text-primary group-hover:text-white" />
                   <h1 className="text-2xl text-black group-hover:text-white">
                     Mobile Apps
                   </h1>
@@ -126,8 +129,8 @@ function LandingSecond() {
                   </p>
                 </div>
 
-                <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px]  hover:bg-blue-700 transition duration-300">
-                  <TbSeo className="text-6xl text-blue-600 group-hover:text-white" />
+                <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px]  hover:bg-primary transition duration-300">
+                  <TbSeo className="text-6xl text-primary group-hover:text-white" />
                   <h1 className="text-2xl text-black group-hover:text-white">
                     SEO Services
                   </h1>

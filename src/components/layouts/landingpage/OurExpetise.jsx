@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Expertise.css";
@@ -26,7 +25,7 @@ function OurExpertise() {
     <div
       className="expertise-container relative h-screen w-full overflow-hidden"
       ref={ref}
-      style={{ backgroundColor: "#fffeed" }}
+      style={{ backgroundColor: "white" }}
     >
       {/* Heading Section */}
       <div className="grid grid-flow-row gap-4">
@@ -45,17 +44,16 @@ function OurExpertise() {
       <div className="relative w-full h-[500px] m-auto overflow-hidden">
         {/* Centered Icon */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-  <img
-    src="https://via.placeholder.com/400x350"
-    alt="Thynk Technologies"
-    className="w-[200px] h-[200px] rounded-full shadow-xl"
-    style={{
-      boxShadow: "0 0 30px 20px rgba(169, 169, 169, 0.5)", // Fading gray glow ring effect
-      outline: "none", // Remove focus outline ring
-    }}
-  />
-</div>
-
+          <img
+            src="public/thynk-logo.png"
+            alt="Thynk Technologies"
+            className="w-[200px] h-[200px] rounded-full shadow-xl overflow-hidden"
+            style={{
+              boxShadow: "0 0 30px 20px rgba(54, 192, 250, 0.9)", // Fading gray glow ring effect
+              outline: "none", // Remove focus outline ring
+            }}
+          />
+        </div>
 
         {/* Spread Icons Container */}
         <div className="absolute inset-0">
@@ -69,7 +67,7 @@ function OurExpertise() {
               { top: "30%", left: "30%" },
               { top: "0%", left: "50%" },
               { top: "70%", left: "30%" },
-              { top: "50%", left: "70%" },
+              { top: "37%", left: "70%" },
               { top: "60%", left: "10%" },
               { top: "70%", left: "60%" },
             ];
@@ -86,7 +84,7 @@ function OurExpertise() {
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate on scroll up/down
                 transition={{ duration: 0.8, delay: index * 0.2 }}
               >
-                <img 
+                <img
                   src={tech.icon}
                   alt={tech.name}
                   className="w-24 h-auto rounded-full shadow-xl overflow-hidden "
