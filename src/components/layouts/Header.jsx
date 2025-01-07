@@ -87,7 +87,7 @@ const Header = () => {
                 style={({ isActive }) => ({
                   color:
                     isActive && ["/", "/about-us"].includes(item.url)
-                      ? "#36c0fa"
+                      ? "#3d77da"
                       : "#333",
                 })}
               >

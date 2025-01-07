@@ -10,7 +10,7 @@
 
 @layer base {
   body {
-    font-family: "Roboto", serif;
+    font-family: "Inter", sans-serif;
   }
   h1 {
     @apply font-semibold;

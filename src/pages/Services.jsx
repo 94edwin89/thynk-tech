@@ -103,8 +103,8 @@ const generateMotionStyles = (right=false) => {
           </div>
         </div>
         {/* Web dev details section */}
-        <div className="flex dark-bg w-full justify-between items-center p-8">
-          <img src={serviceDevelopment} className="w-full h-auto" />
+        <div className="flex bg-gradient-to-r from-slate-700 to-green-100 w-full justify-between items-center py-14">
+          <img src={serviceDevelopment} className="mx-auto w-3/4 h-auto" />
         </div>
       </div>
 
