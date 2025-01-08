@@ -45,7 +45,7 @@ function OurExpertise() {
         {/* Centered Icon */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <img
-            src="public/thynk-logo.png"
+            src="public/logo.png"
             alt="Thynk Technologies"
             className="w-[200px] h-[200px] rounded-full shadow-xl overflow-hidden"
             style={{
