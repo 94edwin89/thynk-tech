@@ -7,7 +7,7 @@ const ContactUs = () => {
 
     return (
         <div className="contact-page-container px-8 ml-8 pt-28 pb-8 bg-white">
-            <h2 className='font-bold text-6xl mb-12'>Let`s talk!</h2>
+            <h2 className='font-bold text-5xl md:text-6xl mb-12'>Let`s talk!</h2>
             <div className="contact-info flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
                 <div className="contact-details text-gray-800">
                     <p className="font-medium text-gray-500 mt-4">Landline</p>
@@ -29,7 +29,7 @@ const ContactUs = () => {
                 <div className="contact-form w-full md:w-2/3">
                     <form>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-6 mt-4">
-                            <div className="relative">
+                            <div className="relative col-span-2 md:col-span-1">
                                 <input
                                     type="text"
                                     placeholder="Full Name*"
@@ -37,7 +37,7 @@ const ContactUs = () => {
                                     required
                                 />
                             </div>
-                            <div className="relative">
+                            <div className="relative col-span-2 md:col-span-1">
                                 <input
                                     type="email"
                                     placeholder="Email*"

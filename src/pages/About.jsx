@@ -17,10 +17,10 @@ const About = () => {
                     <img src={svg} className="absolute left-[3%] z-[1] w-[43%]" />
                     <div className='z-10'>
                         <h3 className="text-[#3d77da] text-lg font-extrabold mb-2">ABOUT US</h3>
-                        <h1 className="text-6xl font-extrabold leading-snug mb-6">
+                        <h1 className=" text-4xl md:text-6xl font-extrabold leading-snug mb-6">
                             We deliver the mission-critical IT services that move the world.
                         </h1>
-                        <button className="text-white bg-primary px-6 py-3 rounded-full hover:bg-[#3dafe0] transition">
+                        <button className="text-white bg-primary px-6 py-3 rounded-full hover:bg-[#255484] transition">
                             GET STARTED
                         </button>
                     </div>
@@ -29,7 +29,7 @@ const About = () => {
                         <img
                             src={image}
                             alt="Office team"
-                            className="rounded-lg shadow-lg"
+                            className="rounded-lg shadow-lg col-span-2"
                         />
 
                         <p className="col-span-2 text-gray-600 leading-relaxed mt-4">
@@ -48,7 +48,7 @@ const About = () => {
                     <div className="flex flex-wrap items-center">
                         <div className="w-full lg:w-7/12">
                             <div className="flex flex-wrap">
-                                <div className="w-full md:w-5/12 flex flex-col items-center">
+                                <div className="w-5/12 flex flex-col items-center">
                                     <div className="mb-8">
                                         <img
                                             src={icon1}
@@ -74,7 +74,7 @@ const About = () => {
                                         <p className="text-xl font-semibold text-center">Our Values</p>
                                     </div>
                                 </div>
-                                <div className="w-full md:w-7/12 pl-4">
+                                <div className="w-7/12 pl-4">
                                     <div className="mb-8">
                                         <p className="text-xl font-bold">Our Vision</p>
                                         <p className="text-gray-300">
@@ -102,12 +102,11 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* Chess Image */}
                         <div className="w-full lg:w-5/12 mt-8 lg:mt-0">
                             <img
                                 src={chess}
                                 alt="Chess Strategy"
-                                className="w-full h-auto"
+                                className="w-full h-auto hidden md:block"
                             />
                         </div>
                     </div>
