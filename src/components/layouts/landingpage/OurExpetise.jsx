@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Expertise.css";
+import logoWhite from "../../../assets/images/logos/logo_white.png"
 
 function OurExpertise() {
   const { ref, inView } = useInView({
@@ -45,11 +46,11 @@ function OurExpertise() {
         {/* Centered Icon */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <img
-            src="public/thynk-logo.png"
+            src={logoWhite}
             alt="Thynk Technologies"
-            className="w-[200px] h-[200px] rounded-full shadow-xl overflow-hidden"
+            className="w-[200px] h-[200px] rounded-full shadow-xl overflow-hidden bg-primary"
             style={{
-              boxShadow: "0 0 30px 20px rgba(54, 192, 250, 0.9)", // Fading gray glow ring effect
+              boxShadow: "0 0 8px 8px rgba(0, 0, 0, 0.3)", // Fading gray glow ring effect
               outline: "none", // Remove focus outline ring
             }}
           />
