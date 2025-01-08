@@ -13,6 +13,7 @@ import { FaInstagram } from "react-icons/fa6";
 import webDev1 from "../assets/images/web_dev_1.jpg"
 import webDev2 from "../assets/images/web_dev_2.jpg"
 import webDev3 from "../assets/images/web_dev_3.jpg"
+import webDev4 from "../assets/images/web_dev_4.jpg"
 
 export const headerLinks = [
   {
@@ -143,14 +144,14 @@ export const webDevServices = [
   },
   {
     id:2,
-    title : "Work 3",
-    img: webDev3,
-    url : "https://www.qualityfishnets.com/"
+    title : "E-Commerce Property Pulse",
+    img: webDev4,
+    url : "https://propertypulse.onrender.com/"
   },
   {
     id:3,
-    title : "Work 4",
+    title : "Hostel Management",
     img: webDev3,
-    url : "https://www.qualityfishnets.com/"
+    url : "https://hostelmanagement1245.netlify.app/"
   },
 ]

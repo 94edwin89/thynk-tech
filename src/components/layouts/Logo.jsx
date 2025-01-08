@@ -17,7 +17,7 @@ const Logo = ({ footer = false }) => {
         <img
           src={footer ? logoNameLight : logoNameDark}
           alt="logo"
-          className="w-[100px] -ml-7 md:-ml-8 h-[35px] lg:w-[200px] lg:h-[45px]"
+          className="w-[100px] h-[35px] lg:w-[200px] lg:h-[45px]"
         />
       </div>
       {/* {footer && (

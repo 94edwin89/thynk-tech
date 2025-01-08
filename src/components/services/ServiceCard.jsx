@@ -15,7 +15,7 @@ const ServiceCard = ({ service }) => {
       <div className="relative group">
         <img
           src={service?.img}
-          className={`w-full md:w-[450px] object-cover h-[200px] md:h-[220px] rounded-md transition-opacity duration-300 group-hover:opacity-80`}
+          className={`w-full md:w-[450px] object-center h-[200px] rounded-md transition-opacity duration-300 group-hover:opacity-80`}
           alt={service?.name}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
