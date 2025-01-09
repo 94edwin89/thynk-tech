@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Expertise.css";
-import logoWhite from "../../../assets/images/logos/logo_white.png"
+import logoWhite from "../../../assets/images/logos/logo_white.png";
 
 function OurExpertise() {
   const { ref, inView } = useInView({
@@ -30,10 +30,10 @@ function OurExpertise() {
     >
       {/* Heading Section */}
       <div className="grid grid-flow-row gap-4">
-        <h1 className="p-8 text-center text-6xl text-gray-600">
+        <h1 className="p-8 text-center  md:text-5xl lg:text-6xl text-gray-600">
           Our Expertise
         </h1>
-        <p className="text-center pb-8">
+        <p className="sm:text-xs text-center pb-8">
           Rely on our extensive technical expertise in web development,
           E-commerce, mobile application, SEO, and cloud computing to deliver
           tailored solutions for your business needs and
@@ -44,11 +44,11 @@ function OurExpertise() {
       {/* Icons Container */}
       <div className="relative w-full h-[500px] m-auto overflow-hidden">
         {/* Centered Icon */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <img
             src={logoWhite}
             alt="Thynk Technologies"
-            className="w-[200px] h-[200px] rounded-full shadow-xl overflow-hidden bg-primary"
+            className=" w-[150px] h-[150px] rounded-full shadow-xl overflow-hidden bg-primary"
             style={{
               boxShadow: "0 0 8px 8px rgba(0, 0, 0, 0.3)", // Fading gray glow ring effect
               outline: "none", // Remove focus outline ring
@@ -88,7 +88,7 @@ function OurExpertise() {
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="w-24 h-auto rounded-full shadow-xl overflow-hidden "
+                  className=" w-14 lg:w-24 h-auto rounded-full shadow-xl overflow-hidden "
                 />
               </motion.div>
             );

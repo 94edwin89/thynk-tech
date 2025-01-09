@@ -35,9 +35,9 @@ function LandingSecond() {
       }`}
     >
       <div className="grid grid-flow-col gap-2 p-9 bg-gray-900 text-gray-200">
-        <div>
+        <div >
           <img
-            className=" w-[450px] h-[550px]"
+            className="sm:h-[200px] overflow-hidden w-[450px] h-[550px]"
             src="public/office-image.png"
             alt="400x400"
           />
@@ -46,8 +46,8 @@ function LandingSecond() {
         <div>
           <div className="grid grid-flow-col gap-4">
             <div>
-              <p className="text-primary font-extrabold pt-8">WHO WE ARE</p>
-              <h1 className="text-6xl">
+              <p className="text-primary sm:text-xl md:text-2xl lg:text-3xl font-extrabold pt-8">WHO WE ARE</p>
+              <h1 className="sm:text-2xl md:text-3xl lg:text-6xl">
                 We provide
                 <br />
                 custom IT solution for
@@ -57,7 +57,7 @@ function LandingSecond() {
                   <HiArrowCircleUp className=" text-primary rotate-45" />
                 </span>
               </h1>
-              <p className="mt-3">
+              <p className="mt-3 sm:text-xm text-justify hyphens-auto">
                 We create profitable applications for your business or clients,
                 <br /> ensuring an exceptional user experience that boosts
                 customer
@@ -68,31 +68,27 @@ function LandingSecond() {
               </p>
             </div>
 
-            <div className="mt-[80px]">
-              <img
-                
-                src="public/employee.png"
-                alt="400x400"
-              />
+            <div className="sm:w-2 sm:h-3 mt-[80px] lg:w-[200px]">
+              <img src="public/employee.png" alt="400x400" />
             </div>
           </div>
 
           <div className="flex justify-evenly p-6">
             <div>
-              <h1 className="text-4xl">
+              <h1 className="sm:text-2xl md:text-3xl lg:text-4xl">
                 <HiOutlineFaceSmile className="text-primary" />
                 Happy Clients
               </h1>
-              <p>
+              <p className="text-sm">
                 satisfied clients and counting
                 <br />- join our success story!
               </p>
             </div>
             <div>
-              <h1 className="text-4xl">
+              <h1 className="sm:text-2xl md:text-3xl lg:text-4xl">
                 <HiCalendarDateRange className=" text-primary" /> Experience
               </h1>
-              <p>
+              <p className="text-sm">
                 Developers experience delivering
                 <br />
                 top-quality solutions - trust us!
