@@ -59,7 +59,7 @@ const generateMotionStyles = (right=false) => {
         <motion.img
           src={serviceImg1}
           alt="Service Image"
-          className="w-full h-full md:h-[450px] md:w-[650px]"
+          className="service-img"
           {...(generateMotionStyles(true))}
         />
       </div>
@@ -80,7 +80,7 @@ const generateMotionStyles = (right=false) => {
             <motion.img
               src={serviceImg2}
               alt="Service Image"
-              className="w-full h-auto md:h-[400px] md:w-[450px] object-cover"
+              className="service-img"
               {...(generateMotionStyles())}
             />
             <motion.div
@@ -131,7 +131,7 @@ const generateMotionStyles = (right=false) => {
             <motion.img
               src={serviceImg3}
               alt="Service Image"
-              className="w-full h-auto md:h-[400px] md:w-[500px] object-contain"
+              className="service-img"
               {...(generateMotionStyles(true))}
             />
           </div>
@@ -159,7 +159,7 @@ const generateMotionStyles = (right=false) => {
             <motion.img
               src={serviceImg4}
               alt="Service Image"
-              className="w-full h-full md:h-[400px] md:w-[500px] object-contain"
+              className="service-img"
               {...(generateMotionStyles())}
             />
             <motion.div

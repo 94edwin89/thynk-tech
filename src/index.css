@@ -6,6 +6,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 @layer base {
@@ -87,4 +88,8 @@
 
   .header-4{
     @apply leading-8  sm:leading-10 tracking-wide text-2xl font-bold
+  }
+
+  .service-img{
+    @apply w-full h-[350px] sm:h-[400px] md:w-[500px] object-contain
   }

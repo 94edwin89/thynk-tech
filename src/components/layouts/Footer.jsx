@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="dark-bg h-auto py-5">
       <div className="container-1200 mx-auto flex flex-col gap-3">
         {/* Logo and social Media Links */}
-        <div className="flex flex-wrap justify-between items-center">
+        <div className="flex flex-col items-start gap-3 sm:flex-row sm:justify-between sm:items-center">
           {/* image */}
           <Logo footer={true}/>
           {/* follow us */}
@@ -42,7 +42,7 @@ const Footer = () => {
         <hr className="light-text border-t" />
 
         {/* LINKS   */}
-        <div className="flex flex-wrap justify-between mt-8 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-between mt-8 gap-6">
           {/* Quick links */}
           <div className="flex flex-col gap-5">
             <h6 className="uppercase extra-light-text  text-md font-semibold">
@@ -54,7 +54,7 @@ const Footer = () => {
                   key={link?.title}
                   className="my-2 hover:text-white font-semibold text-[15px]"
                 >
-                  <Link to={link.url}>{link?.title}</Link>
+                  <Link to={link.url} onClick={() => window.scrollTo(0, 0)}>{link?.title}</Link>
                 </li>
               ))}
             </ul>
@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
 
           {/* Get In Touch */}
-          <div className="flex flex-col gap-5">
+          <div className="hidden sm:flex flex-col gap-5">
             <h6 className="uppercase extra-light-text  text-md font-semibold">
               Get In Touch
             </h6>
@@ -91,13 +91,13 @@ const Footer = () => {
               </li>
 
               <li className="text-wrap text-[15px] font-semibold">
-                <strong>INDIA</strong>: Office No.10-B1, Trans Asia Cyber Park,
-                Infopark SEZ Phase-II, Ambalamedu, P.O, Kochi, Kerala 682303
+                <strong>INDIA</strong>: Office No.10-B1, Wayanad,
+                Sulthan Batheri, P.O, Wayanad, Kerala 682303
               </li>
             </ul>
           </div>
           {/* Subscibe to the Email */}
-          <div className="flex flex-col gap-5 w-full md:max-w-[280px]">
+          <div className="col-span-2 sm:col-span-3 md:col-span-1 flex flex-col gap-5 w-full md:max-w-[280px]">
             <h6 className="uppercase extra-light-text  text-md font-semibold">
               Newsletter
             </h6>
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="flex justify-between items-center mt-6 flex-wrap gap-5">
+        <div className="flex flex-col sm:flex-row justify-between items-center mt-6 gap-5 w-full">
           <p className="light-text text-center text-sm">
            Copyright &copy; thynktechnologies.com  {" "}
             {new Date().getFullYear()}. All rights reserved

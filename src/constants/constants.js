@@ -125,7 +125,7 @@ export const serviceLinks = [
   },
   {
     title : "Other Services",
-    url : "/services"
+    url : "/services/web-dev"
   }
 ];
 
