@@ -93,3 +93,11 @@
   .service-img{
     @apply w-full h-[350px] sm:h-[400px] md:w-[500px] object-contain
   }
+
+  .custom-title {
+    font-size: 16px; 
+  }
+  
+  .custom-text {
+    font-size: 12px; 
+  }
