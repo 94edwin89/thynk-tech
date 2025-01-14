@@ -30,7 +30,7 @@ function OurExpertise() {
     >
       {/* Heading Section */}
       <div className="grid grid-flow-row gap-4">
-        <h1 className="p-8 text-center  md:text-5xl lg:text-6xl text-gray-600">
+        <h1 className="p-8 text-center text-6xl text-gray-600">
           Our Expertise
         </h1>
         <p className="sm:text-xs text-center pb-8">
