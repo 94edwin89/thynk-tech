@@ -66,7 +66,7 @@ const generateMotionStyles = (right=false) => {
 
       {/* Our Services Section */}
       {/* web dev */}
-      <div className="flex flex-col gap-10 mt-20 my-10">
+      <div className="flex flex-col gap-10 sm:mt-20 my-5 sm:my-10">
         <div className="container-1200 mx-auto flex-flex-col gap-8 px-2">
           <motion.h3
             className="header-3 text-center"

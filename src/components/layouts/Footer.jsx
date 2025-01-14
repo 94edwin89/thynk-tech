@@ -52,7 +52,7 @@ const Footer = () => {
               {quickLinks?.map((link) => (
                 <li
                   key={link?.title}
-                  className="my-2 hover:text-white font-semibold text-[15px]"
+                  className="my-2 hover:text-white font-semibold text-[13px] sm:text-[15px]"
                 >
                   <Link to={link.url} onClick={() => window.scrollTo(0, 0)}>{link?.title}</Link>
                 </li>
@@ -69,7 +69,7 @@ const Footer = () => {
               {serviceLinks?.map((link) => (
                 <li
                   key={link?.title}
-                  className="my-2 hover:text-white font-semibold text-[15px]"
+                  className="my-2 hover:text-white font-semibold text-[13px] sm:text-[15px]"
                 >
                   <Link to={link.url}>{link?.title}</Link>
                 </li>
@@ -86,7 +86,7 @@ const Footer = () => {
               <li className="flex gap-2 my-2 hover:text-white text-[15px]">
                 <img src={indFlag} alt="India Flag" />
                 <a href="tel:+914844026866" className="hover:text-white">
-                  (+91) 484-402-6866
+                  +91 94008 01182
                 </a>
               </li>
 
@@ -101,7 +101,7 @@ const Footer = () => {
             <h6 className="uppercase extra-light-text  text-md font-semibold">
               Newsletter
             </h6>
-            <h6 className="light-text hover:text-white text-md font-semibold text-wrap">
+            <h6 className="light-text hover:text-white text-[13px] sm:text-[15px] font-semibold text-wrap">
               Subscribe to our newsletter for latest updates
             </h6>
             <div className="flex justify-between p-2 border-0 border-b border-b-gray-500">
@@ -121,9 +121,9 @@ const Footer = () => {
             {new Date().getFullYear()}. All rights reserved
           </p>
           <div className="light-text text-sm text-center sm:text-right w-full sm:w-1/2">
-              <a href="/" className="hover:text-white mr-1">Terms of Use</a>
+              <a href="/" className="hover:text-white mr-1 text-[13px] sm:text-[15px]">Terms of Use</a>
               {" "}| {" "}
-              <a href="/" className="hover:text-white ml-1">Privacy Policy</a>
+              <a href="/" className="hover:text-white ml-1 text-[13px] sm:text-[15px]">Privacy Policy</a>
           </div>
         </div>
       </div>
