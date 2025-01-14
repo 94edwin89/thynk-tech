@@ -6,7 +6,7 @@ import { HiDevicePhoneMobile } from "react-icons/hi2";
 import { MdOutlineWeb } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-function LandingSecond() {
+function OurServices() {
   const [isVisible, setIsVisible] = useState(false); // Tracks visibility
   const componentRef = useRef(null);
 
@@ -42,12 +42,12 @@ function LandingSecond() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="grid grid-flow-col gap-2 p-9 bg-gray-500 bg-opacity-70 text-gray-200">
+      <div className="grid grid-cols-1 sm:grid-rows-1 gap-2 p-9 bg-gray-500 bg-opacity-70 text-gray-200">
         <div>
-          <div className="grid grid-flow-col gap-4 items-center pl-40">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             <div>
               <p className="text-primary font-extrabold pt-8">OUR SERVICES</p>
-              <h1 className="text-6xl">
+              <h1 className=" text-2xl lg:text-6xl">
                 Explore our services
                 <br />
                 with just one click
@@ -67,9 +67,9 @@ function LandingSecond() {
               </Button>
             </div>
             {/* --------------------------------------------------------------------------------- */}
-            <div className="-ml-[180px]  mt-[80px] grid grid-flow-col ">
+            <div className=" lg:mt-[80px] grid lg:grid-cols-2 sm:grid-rows-0">
               {/* first section */}
-              <div className="-mt-[80px]">
+              <div className="-mt-[80px] hidden lg:block">
                 <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px] mb-3 hover:bg-primary transition duration-300">
                   <RiCustomerService2Fill className="text-6xl  text-primary group-hover:text-white" />
                   <h1 className="text-2xl text-black group-hover:text-white">
@@ -110,7 +110,7 @@ function LandingSecond() {
               </div>
 
               {/* second section */}
-              <div className="-ml-[80px] -mt-[30px]">
+              <div className="-ml-[80px] -mt-[30px] hidden lg:block">
                 <div className="group bg-white flex flex-col items-center p-5 rounded-md w-[240px] mb-3  hover:bg-primary transition duration-300">
                   <HiDevicePhoneMobile className="text-6xl text-primary group-hover:text-white" />
                   <h1 className="text-2xl text-black group-hover:text-white">
@@ -155,4 +155,4 @@ function LandingSecond() {
   );
 }
 
-export default LandingSecond;
+export default OurServices;
