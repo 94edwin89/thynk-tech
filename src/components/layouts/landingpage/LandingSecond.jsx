@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { HiArrowCircleUp } from "react-icons/hi";
 import { HiCalendarDateRange, HiOutlineFaceSmile } from "react-icons/hi2";
+import officeImage from '../../../assets/images/office-image.png'
+import employee from '../../../assets/images/employee.png'
 
 function LandingSecond() {
   const [isVisible, setIsVisible] = useState(false); // Tracks visibility
@@ -38,7 +40,7 @@ function LandingSecond() {
         <div className="hidden lg:block">
           <img
             className="overflow-hidden lg:w-[450px] lg:h-[550px]"
-            src="public/office-image.png"
+            src={officeImage}
             alt="400x400"
           />
         </div>
@@ -71,11 +73,11 @@ function LandingSecond() {
             </div>
 
             <div className="hidden lg:block mt-[80px] lg:w-[200px]">
-              <img src="public/employee.png" alt="400x400" />
+              <img src={employee}alt="400x400" />
             </div>
           </div>
 
-          <div className="sm:flex-col flex justify-evenly p-6">
+          <div className="sm:flex-col lg:flex-row flex justify-evenly p-6">
             <div>
               <h1 className="sm:text-2xl md:text-3xl lg:text-4xl">
                 <HiOutlineFaceSmile className="text-primary" />

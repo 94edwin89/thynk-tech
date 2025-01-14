@@ -2,6 +2,16 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Expertise.css";
 import logoWhite from "../../../assets/images/logos/logo_white.png";
+import ios from '../../../assets/images/ourservices/ios.jpeg'
+import php from '../../../assets/images/ourservices/php.png'
+import javascript from '../../../assets/images/ourservices/js.jpeg'
+import html from '../../../assets/images/ourservices/html.jpeg'
+import uxui from '../../../assets/images/ourservices/uiux.png'
+import react from '../../../assets/images/ourservices/react.png'
+import angular from '../../../assets/images/ourservices/angular.png'
+import flutter from '../../../assets/images/ourservices/flutter.png'
+import android from '../../../assets/images/ourservices/android.png'
+import python from '../../../assets/images/ourservices/python.png'
 
 function OurExpertise() {
   const { ref, inView } = useInView({
@@ -10,16 +20,16 @@ function OurExpertise() {
   });
 
   const technologies = [
-    { name: "Android", icon: "public/android.png" },
-    { name: "iOS", icon: "public/html.jpeg" },
-    { name: "PHP", icon: "public/react.png" },
-    { name: "JavaScript", icon: "public/flutter.png" },
-    { name: "HTML", icon: "public/ios.jpeg" },
-    { name: "UX/UI", icon: "public/python.png" },
-    { name: "React", icon: "public/uiux.png" },
-    { name: "Angular", icon: "public/js.jpeg" },
-    { name: "Flutter", icon: "public/angular.png" },
-    { name: "Python", icon: "public/php.png" },
+    { name: "Android", icon: android },
+    { name: "iOS", icon: ios },
+    { name: "PHP", icon: php},
+    { name: "JavaScript", icon: javascript},
+    { name: "HTML", icon: html},
+    { name: "UX/UI", icon: uxui},
+    { name: "React", icon: react},
+    { name: "Angular", icon: angular},
+    { name: "Flutter", icon: flutter},
+    { name: "Python", icon: python},
   ];
 
   return (

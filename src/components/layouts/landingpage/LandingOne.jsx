@@ -1,6 +1,8 @@
 import { HiArrowRight, HiOutlineThumbUp } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import svg from "../../../assets/svgs/lines-bg.svg";
+import landing from '../../../assets/images/landing.png'
+
 
 function LandingOne() {
   return (
@@ -29,7 +31,7 @@ function LandingOne() {
       <div className=" sm:grid lg:grid-flow-col  gap-5">
         <div className="flex-1 flex flex-col items-center w-full mb-8">
           <div className="relative mb-6">
-            <img src="public/landing.png" alt="Team collaborating" />
+            <img src={landing} alt="Team collaborating" />
 
             <button className="lg:w-[195px] font-bold lg:h-[65px] absolute bottom-[-1px] right-[-3px] bg-primary text-white py-2 px-4 rounded-xl hover:bg-[#28b1eb]">
               <Link to="/contact-us"> REACH OUT</Link>

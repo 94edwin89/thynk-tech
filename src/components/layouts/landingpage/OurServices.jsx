@@ -5,6 +5,7 @@ import { TbSeo } from "react-icons/tb";
 import { HiDevicePhoneMobile } from "react-icons/hi2";
 import { MdOutlineWeb } from "react-icons/md";
 import { Link } from "react-router-dom";
+import bagroundImage from "../../../assets/images/Background-our-services.png";
 
 function OurServices() {
   const [isVisible, setIsVisible] = useState(false); // Tracks visibility
@@ -36,7 +37,7 @@ function OurServices() {
         isVisible ? "opacity-1 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
-        backgroundImage: `url('public/Background-our-services.png')`,
+        backgroundImage: `url(${bagroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
