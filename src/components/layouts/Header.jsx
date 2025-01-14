@@ -29,7 +29,10 @@ const Header = () => {
   };
 
   const handleShowSubmenu = (item) => {
-    if (!item.subMenu) return null;
+    if (!item.subMenu){
+      window.scrollTo(0,0);
+      return;
+    };
 
     if (hoveredItem === item.title) return setHoveredItem(null);
 

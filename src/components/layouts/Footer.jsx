@@ -91,8 +91,7 @@ const Footer = () => {
               </li>
 
               <li className="text-wrap text-[15px] font-semibold">
-                <strong>INDIA</strong>: Office No.10-B1, Wayanad,
-                Sulthan Batheri, P.O, Wayanad, Kerala 682303
+                <strong>INDIA</strong>: HS no.156, ward 3, chundale-post, wayanad ,kerala -673123
               </li>
             </ul>
           </div>
@@ -121,9 +120,9 @@ const Footer = () => {
             {new Date().getFullYear()}. All rights reserved
           </p>
           <div className="light-text text-sm text-center sm:text-right w-full sm:w-1/2">
-              <a href="/" className="hover:text-white mr-1 text-[13px] sm:text-[15px]">Terms of Use</a>
+              <a href="/terms-of-use" target="_blank" className="hover:text-white mr-1 text-[13px] sm:text-[15px]">Terms of Use</a>
               {" "}| {" "}
-              <a href="/" className="hover:text-white ml-1 text-[13px] sm:text-[15px]">Privacy Policy</a>
+              <a href="/privacy-policy" target="_blank" className="hover:text-white ml-1 text-[13px] sm:text-[15px]">Privacy Policy</a>
           </div>
         </div>
       </div>
