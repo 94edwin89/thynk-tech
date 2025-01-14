@@ -51,7 +51,7 @@ function LandingSecond() {
               <p className="text-primary sm:text-xl md:text-2xl lg:text-3xl font-extrabold pt-8">
                 WHO WE ARE
               </p>
-              <h1 className=" text-6xl">
+              <h1 className="text-4xl lg:text-6xl">
                 We provide
                 <br />
                 custom IT solution for
