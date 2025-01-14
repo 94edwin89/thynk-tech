@@ -30,9 +30,9 @@
   @apply bg-[#11190c];
 }
 
-  .dark-text{
-    @apply text-[#11190c]
-  }
+.dark-text{
+  @apply text-[#11190c]
+}
 
  .light-text{
   @apply text-gray-500
@@ -46,13 +46,13 @@
   @apply bg-gray-500
  }
   
-  .header-btn {
-    @apply flex items-center bg-primary text-white p-1.5 sm:p-2.5 rounded hover:brightness-125 hover:shadow-md;
-  }
+.header-btn {
+  @apply flex items-center bg-primary text-white p-1.5 sm:p-2.5 rounded hover:brightness-125 hover:shadow-md;
+}
 
-  .mobile-menu-container{
-    @apply absolute flex flex-col items-start gap-8 top-0 left-0 bg-white z-20 h-[100vh] w-[100vw] p-8;
-  }
+.mobile-menu-container{
+  @apply absolute flex flex-col items-start gap-8 top-0 left-0 bg-white z-20 h-[100vh] w-[100vw] p-8;
+}
 
 .mobile-sub-menu {
   @apply w-full;
@@ -82,22 +82,23 @@
   font-weight: 100;
   font-style: normal;
 }
-  .header-3{
-    @apply leading-8 sm:leading-10 tracking-wide text-2xl sm:text-3xl font-bold
-  }
-
-  .header-4{
-    @apply leading-8  sm:leading-10 tracking-wide text-2xl font-bold
-  }
-
-  .service-img{
-    @apply w-full h-[350px] sm:h-[400px] md:w-[500px] object-contain
-  }
-
-  .custom-title {
-    font-size: 16px; 
-  }
   
-  .custom-text {
-    font-size: 12px; 
-  }
+.header-3{
+   @apply leading-8 sm:leading-10 tracking-wide text-2xl sm:text-3xl font-bold
+}
+
+.header-4{
+  @apply leading-8  sm:leading-10 tracking-wide text-2xl font-bold
+}
+
+.service-img{
+  @apply w-full h-[350px] sm:h-[400px] md:w-[500px] object-contain
+}
+
+.custom-title {
+  font-size: 16px; 
+}
+  
+.custom-text {
+  font-size: 12px; 
+}

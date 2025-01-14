@@ -14,7 +14,7 @@ function LandingOne() {
       <img src={svg} className="absolute right-[3%]  w-[43%] rotate-180" />
 
       <div className="flex flex-col mb-8 w-full max-w-4xl items-center text-center md:text-left p-8">
-        <h1 className="lg:text-7xl font-bold text-gray-800 mb-4">
+        <h1 className="lg:text-7xl text-4xl font-bold text-gray-800 mb-4">
           <span className="font-light">We want your</span>
           <br />{" "}
           <span className="text-primary">

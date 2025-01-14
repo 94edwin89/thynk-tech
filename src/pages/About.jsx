@@ -18,11 +18,11 @@ const About = () => {
                     <img src={svg} className="absolute left-[3%] z-[1] w-[43%]" />
                     <div className='z-10'>
                         <h3 className="text-[#3d77da] text-lg font-extrabold mb-2">ABOUT US</h3>
-                        <h1 className="text-5xl font-light leading-[60px] mb-6">
-                            <span className='font-serif text-6xl'>W</span>e deliver the mission-critical IT services that move the world.
+                        <h1 className="text-3xl md:text-5xl font-light sm:leading-[60px] mb-6">
+                            <span className='font-serif text-4xl sm:text-6xl'>W</span>e deliver the mission-critical IT services that move the world.
                         </h1>
-                        <button className="text-white bg-primary px-6 py-3 rounded-full hover:bg-[#3dafe0] transition">
-                            <Link to="/contact-us">GET STARTED</Link>
+                        <button className="text-white bg-primary px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] hover:bg-[#3dafe0] transition">
+                            <Link to="/contact-us" className='text-sm sm:text-md'>GET STARTED</Link>
                         </button>
                     </div>
 
@@ -30,7 +30,7 @@ const About = () => {
                         <img
                             src={image}
                             alt="Office team"
-                            className="rounded-lg shadow-lg"
+                            className="rounded-lg shadow-lg col-span-2 sm:col-span-1"
                         />
 
                         <p className="col-span-2 text-gray-600 font-light leading-relaxed mt-4">
@@ -45,24 +45,24 @@ const About = () => {
                 className=" bg-gray-900 text-white pt-8"
             >
                 <div className="mx-auto">
-                    <h2 className="text-center text-6xl font-light mb-8">Our Mission</h2>
+                    <h2 className="text-center text-3xl sm:text-5xl font-light mb-8">Our Mission</h2>
                     <div className="flex flex-wrap items-center">
                         <div className="w-full lg:w-7/12">
                             <div className="flex flex-wrap">
-                                <div className="w-full md:w-5/12 flex flex-col gap-4 items-center">
-                                    <div className="mb-8">
+                                <div className="w-full md:w-5/12 flex justify-center sm:flex-col gap-4 items-center mb-5 sm:mb-0">
+                                    <div className="sm:mb-8">
                                         <img
                                             src={icon1}
                                             alt="Vision Icon"
-                                            className="w-16 h-16 mb-2"
+                                            className="w-16 h-16 sm:mb-2"
                                         />
                                         {/* <p className="text-xl font-light text-center">Our Vision</p> */}
                                     </div>
-                                    <div className="mb-8">
+                                    <div className="sm:mb-8">
                                         <img
                                             src={icon2}
                                             alt="Mission Icon"
-                                            className="w-16 h-16 mb-2"
+                                            className="w-16 h-16 sm:mb-2"
                                         />
                                         {/* <p className="text-xl font-light text-center">Our Mission</p> */}
                                     </div>
@@ -70,7 +70,7 @@ const About = () => {
                                         <img
                                             src={icon3}
                                             alt="Values Icon"
-                                            className="w-16 h-16 mb-2"
+                                            className="w-16 h-16 sm:mb-2"
                                         />
                                         {/* <p className="text-xl font-light text-center">Our Values</p> */}
                                     </div>
@@ -108,7 +108,7 @@ const About = () => {
                             <img
                                 src={chess}
                                 alt="Chess Strategy"
-                                className="w-full h-auto"
+                                className="hidden sm:inline w-full h-auto"
                             />
                         </div>
                     </div>
@@ -124,7 +124,7 @@ const About = () => {
                         {/* Title Section */}
                         <div className="w-full lg:w-3/12 px-4 mb-8 lg:mb-0">
                             <div className='flex flex-col h-full justify-center'>
-                                <p className="text-5xl font-light text-center text-gray-900 mb-4">
+                                <p className="text-3xl sm:text-5xl font-semibold text-center text-gray-900 mb-6 sm:mb-4">
                                     Our Company Values
                                 </p>
                                 <p className="text-gray-600">

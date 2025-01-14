@@ -48,7 +48,7 @@ function OurServices() {
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div>
               <p className="text-primary font-extrabold pt-8">OUR SERVICES</p>
-              <h1 className=" text-2xl lg:text-6xl">
+              <h1 className=" text-3xl lg:text-6xl">
                 Explore our services
                 <br />
                 with just one click

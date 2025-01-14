@@ -60,8 +60,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contact-page-container px-8 ml-8 pt-28 pb-8 bg-white">
-      <h2 className="font-bold text-6xl mb-12">Let`s talk!</h2>
+    <div className="contact-page-container px-8 ml-8 pt-32 pb-8 bg-white">
+      <h2 className="font-bold text-4xl sm:text-6xl mb-12">Let`s talk!</h2>
       <div className="contact-info flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
         <div className="contact-details text-gray-800">
           <p className="font-medium text-gray-500 mt-4">Phone</p>
@@ -78,7 +78,7 @@ const ContactUs = () => {
             +91 9400801182
           </p>
           <p className="font-medium mt-8 text-gray-500">Email</p>
-          <p>info@thynktechnolagies.com</p>
+          <p>info@thynktechnologies.com</p>
         </div>
         <div className="contact-form w-full md:w-2/3">
           <form onSubmit={handleSubmit}>
@@ -101,7 +101,7 @@ const ContactUs = () => {
                   required
                 />
               </div>
-              <div className="relative mb-6 flex items-center gap-2 col-span-2 md:col-span-1">
+              <div className="relative mb-6 flex items-center gap-2">
                 <CountryCodeDropdown />
                 <input
                   type="tel"
@@ -111,7 +111,7 @@ const ContactUs = () => {
                   required
                 />
               </div>
-              <div className="relative mb-6 flex items-center gap-2 col-span-2 md:col-span-1">
+              <div className="relative mb-6 flex items-center gap-2">
                 <input
                   type="text"
                   name="query"

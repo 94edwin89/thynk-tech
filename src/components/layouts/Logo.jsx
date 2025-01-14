@@ -4,10 +4,15 @@ import logoNameDark from "../../assets/images/logos/logo_name_dark.png";
 import logoNameLight from "../../assets/images/logos/logo_name_white.png";
 import logoLight from "../../assets/images/logos/logo_white.png";
 import logoSloganLight from "../../assets/images/logos/logo_slogan_white.png";
+import { Link } from "react-router-dom";
 
 const Logo = ({ footer = false }) => {
   return (
-    <div className="flex flex-col">
+    <Link
+      to={"/"}
+      onClick={() => window.scrollTo(0, 0)}
+      className="flex flex-col"
+    >
       <div className="flex flex-row justify-center items-center">
         <img
           src={footer ? logoLight : logoDark}
@@ -28,7 +33,7 @@ const Logo = ({ footer = false }) => {
         />
 
       )} */}
-    </div>
+    </Link>
   );
 };
 

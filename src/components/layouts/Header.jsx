@@ -29,7 +29,10 @@ const Header = () => {
   };
 
   const handleShowSubmenu = (item) => {
-    if (!item.subMenu) return null;
+    if (!item.subMenu){
+      window.scrollTo(0,0);
+      return;
+    };
 
     if (hoveredItem === item.title) return setHoveredItem(null);
 
@@ -61,7 +64,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`w-full bg-white flex justify-center transition-all duration-300 ease-in ${
+      className={`w-full bg-white flex justify-center py-2 sm:py-1 transition-all duration-300 ease-in ${
         isScrolled ? "fixed top-0 shadow-md z-50" : "absolute z-50"
       }`}
     >
@@ -127,7 +130,7 @@ const Header = () => {
         </div>
         <div className="flex gap-5 justify-center items-center">
           <Button>
-            <Link to="/contact-us">Contact Us</Link>
+            <Link to="/contact-us" onClick={() => window.scrollTo(0,0)}>Contact Us</Link>
           </Button>
           <TiThMenu
             size={28}
