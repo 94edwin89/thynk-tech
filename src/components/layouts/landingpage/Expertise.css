@@ -1,0 +1,73 @@
+.tech-circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .tech-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tech-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Circular positioning of icons */
+  .tech-icon-1 { top: 0; left: 50%; transform: translate(-50%, 0); }
+  .tech-icon-2 { top: 20%; left: 85%; transform: translate(-50%, 0); }
+  .tech-icon-3 { top: 50%; right: 0; transform: translate(0, -50%); }
+  .tech-icon-4 { bottom: 20%; right: 15%; transform: translate(0, 50%); }
+  .tech-icon-5 { bottom: 0; left: 50%; transform: translate(-50%, 0); }
+  .tech-icon-6 { bottom: 20%; left: 15%; transform: translate(0, 50%); }
+  .tech-icon-7 { top: 50%; left: 0; transform: translate(0, -50%); }
+  .tech-icon-8 { top: 20%; left: 15%; transform: translate(0, 0); }
+  .tech-icon-9 { top: 20%; right: 15%; transform: translate(0, 0); }
+  .tech-icon-10 { bottom: 50%; right: 20%; transform: translate(-50%, 0); }
+  
+
+  .tech-circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .tech-icon {
+    position: absolute;
+    transform-origin: center;
+  }
+  .expertise-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; /* Ensure icons outside bounds don't show */
+  }
+  
+  .expertise-container img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .expertise-container img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+  }
+  
