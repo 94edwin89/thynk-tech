@@ -2,6 +2,16 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Expertise.css";
 import logoWhite from "../../../assets/images/logos/logo_white.png";
+import ios from '../../../assets/images/ourservices/ios.jpeg'
+import php from '../../../assets/images/ourservices/php.png'
+import javascript from '../../../assets/images/ourservices/js.jpeg'
+import html from '../../../assets/images/ourservices/html.jpeg'
+import uxui from '../../../assets/images/ourservices/uiux.png'
+import react from '../../../assets/images/ourservices/react.png'
+import angular from '../../../assets/images/ourservices/angular.png'
+import flutter from '../../../assets/images/ourservices/flutter.png'
+import android from '../../../assets/images/ourservices/android.png'
+import python from '../../../assets/images/ourservices/python.png'
 
 function OurExpertise() {
   const { ref, inView } = useInView({
@@ -10,16 +20,16 @@ function OurExpertise() {
   });
 
   const technologies = [
-    { name: "Android", icon: "public/android.png" },
-    { name: "iOS", icon: "public/html.jpeg" },
-    { name: "PHP", icon: "public/react.png" },
-    { name: "JavaScript", icon: "public/flutter.png" },
-    { name: "HTML", icon: "public/ios.jpeg" },
-    { name: "UX/UI", icon: "public/python.png" },
-    { name: "React", icon: "public/uiux.png" },
-    { name: "Angular", icon: "public/js.jpeg" },
-    { name: "Flutter", icon: "public/angular.png" },
-    { name: "Python", icon: "public/php.png" },
+    { name: "Android", icon: android },
+    { name: "iOS", icon: ios },
+    { name: "PHP", icon: php},
+    { name: "JavaScript", icon: javascript},
+    { name: "HTML", icon: html},
+    { name: "UX/UI", icon: uxui},
+    { name: "React", icon: react},
+    { name: "Angular", icon: angular},
+    { name: "Flutter", icon: flutter},
+    { name: "Python", icon: python},
   ];
 
   return (
@@ -30,7 +40,7 @@ function OurExpertise() {
     >
       {/* Heading Section */}
       <div className="grid grid-flow-row gap-4">
-        <h1 className="p-8 text-center text-6xl text-gray-600">
+        <h1 className="p-8 text-center text-4xl lg:text-6xl text-gray-600">
           Our Expertise
         </h1>
         <p className="sm:text-xs text-center pb-8">
@@ -48,7 +58,7 @@ function OurExpertise() {
           <img
             src={logoWhite}
             alt="Thynk Technologies"
-            className=" w-[150px] h-[150px] rounded-full shadow-xl overflow-hidden bg-primary"
+            className="w-[100px] h-[auto] lg:w-[150px] lg:h-[150px] rounded-full shadow-xl overflow-hidden bg-primary"
             style={{
               boxShadow: "0 0 8px 8px rgba(0, 0, 0, 0.3)", // Fading gray glow ring effect
               outline: "none", // Remove focus outline ring
@@ -63,12 +73,12 @@ function OurExpertise() {
             const positions = [
               { top: "10%", left: "10%" },
               { top: "0%", left: "80%" },
-              { top: "40%", left: "20%" },
+              { top: "50%", left: "20%" },
               { top: "70%", left: "80%" },
               { top: "30%", left: "30%" },
               { top: "0%", left: "50%" },
               { top: "70%", left: "30%" },
-              { top: "37%", left: "70%" },
+              { top: "35%", left: "70%" },
               { top: "60%", left: "10%" },
               { top: "70%", left: "60%" },
             ];

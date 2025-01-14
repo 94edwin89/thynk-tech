@@ -64,7 +64,7 @@ const ContactUs = () => {
       <h2 className="font-bold text-6xl mb-12">Let`s talk!</h2>
       <div className="contact-info flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
         <div className="contact-details text-gray-800">
-          <p className="font-medium text-gray-500 mt-4">Landline</p>
+          <p className="font-medium text-gray-500 mt-4">Phone</p>
           <p>
             <ReactCountryFlag
               countryCode="IN"
@@ -75,7 +75,7 @@ const ContactUs = () => {
                 marginRight: "0.5rem",
               }}
             />
-            +91 484 402 6866
+            +91 9400801182
           </p>
           <p className="font-medium mt-8 text-gray-500">Email</p>
           <p>info@thynktechnolagies.com</p>

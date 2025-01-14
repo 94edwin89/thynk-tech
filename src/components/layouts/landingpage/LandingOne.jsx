@@ -1,6 +1,8 @@
 import { HiArrowRight, HiOutlineThumbUp } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import svg from "../../../assets/svgs/lines-bg.svg";
+import landing from '../../../assets/images/landing.png'
+
 
 function LandingOne() {
   return (
@@ -12,7 +14,7 @@ function LandingOne() {
       <img src={svg} className="absolute right-[3%]  w-[43%] rotate-180" />
 
       <div className="flex flex-col mb-8 w-full max-w-4xl items-center text-center md:text-left p-8">
-        <h1 className="lg:text-7xl font-bold text-gray-800 mb-4">
+        <h1 className="lg:text-7xl text-4xl font-bold text-gray-800 mb-4">
           <span className="font-light">We want your</span>
           <br />{" "}
           <span className="text-primary">
@@ -29,7 +31,7 @@ function LandingOne() {
       <div className=" sm:grid lg:grid-flow-col  gap-5">
         <div className="flex-1 flex flex-col items-center w-full mb-8">
           <div className="relative mb-6">
-            <img src="public/landing.png" alt="Team collaborating" />
+            <img src={landing} alt="Team collaborating" />
 
             <button className="lg:w-[195px] font-bold lg:h-[65px] absolute bottom-[-1px] right-[-3px] bg-primary text-white py-2 px-4 rounded-xl hover:bg-[#28b1eb]">
               <Link to="/contact-us"> REACH OUT</Link>
