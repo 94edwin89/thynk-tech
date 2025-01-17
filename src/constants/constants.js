@@ -14,6 +14,7 @@ import webDev1 from "../assets/images/web_dev_1.jpg"
 import webDev2 from "../assets/images/web_dev_2.jpg"
 import webDev3 from "../assets/images/web_dev_3.jpg"
 import webDev4 from "../assets/images/web_dev_4.jpg"
+import webDev5 from "../assets/images/web_dev_5.jpg"
 
 export const headerLinks = [
   {
@@ -142,6 +143,14 @@ export const webDevServices = [
     img: webDev2,
     url : "https://www.qualityfishnets.com/"
   },
+  
+  {
+    id:4,
+    title : "Rooms Booking App",
+    img: webDev5,
+    url : "https://the-booking-app.vercel.app/login"
+  },
+
   {
     id:2,
     title : "E-Commerce Property Pulse",
