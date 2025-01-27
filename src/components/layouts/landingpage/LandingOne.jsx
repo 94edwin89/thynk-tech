@@ -1,8 +1,8 @@
 import { HiArrowRight, HiOutlineThumbUp } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import svg from "../../../assets/svgs/lines-bg.svg";
-import landing from '../../../assets/images/landing.png'
-
+import landing from "../../../assets/images/landing.png";
+import Landingfolder from "../../../assets/images/Landingfolder.svg";
 
 function LandingOne() {
   return (
@@ -30,26 +30,34 @@ function LandingOne() {
 
       <div className=" sm:grid lg:grid-flow-col  gap-5">
         <div className="flex-1 flex flex-col items-center w-full mb-8">
-          <div className="relative mb-6">
+          <div className="relative ">
             <img src={landing} alt="Team collaborating" />
 
-            <button className="lg:w-[195px] font-bold lg:h-[65px] absolute bottom-[-1px] right-[-3px] bg-primary text-white py-2 px-4 rounded-xl hover:bg-[#28b1eb]">
+            <button className="lg:w-[195px] font-bold lg:h-[65px] absolute bottom-[-1px] right-[-3px] bg-primary text-white py-2 px-4 rounded-md hover:bg-[#28b1eb]">
               <Link to="/contact-us"> REACH OUT</Link>
             </button>
           </div>
         </div>
 
-        <div className="reletive z-10 flex-1 flex-row lg:w-[full] lg:h-[280px]  bg-gray-100 p-6 rounded-lg shadow text-center">
-          <div className="text-primary text-3xl mt-9 mb-4">
-            <HiOutlineThumbUp />
-          </div>
+       
+        <div className="relative z-10 flex flex-row lg:w-full lg:h-[280px] p-6 rounded-lg text-center">
+  <img
+    src={Landingfolder}
+    alt="Folder representing our satisfied clients"
+    className="absolute inset-0 w-full h-full object-cover z-[-1] rounded-lg"
+  />
+  <div className="flex flex-col items-center justify-center">
+    <div className="text-primary text-3xl mt-9 mb-4">
+      <HiOutlineThumbUp />
+    </div>
+    <p className="text-gray-700 font-medium">
+      Satisfied clients
+      <br /> and counting - join
+      <br /> our success story!
+    </p>
+  </div>
+</div>
 
-          <p className="text-gray-700 font-medium">
-            satisfied clients
-            <br /> and counting - join
-            <br /> our success story!
-          </p>
-        </div>
       </div>
     </section>
   );
