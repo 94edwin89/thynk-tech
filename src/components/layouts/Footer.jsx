@@ -8,6 +8,7 @@ import {
 import indFlag from "../../assets/images/indflag.png";
 import { FaArrowRight } from "react-icons/fa6";
 import Logo from "./Logo.jsx";
+import SocialIcons from "../UI/SocialIcons.jsx";
 
 const Footer = () => {
   return (
@@ -22,7 +23,7 @@ const Footer = () => {
             <p className="uppercase light-text font-semibold hover:text-white">
               Follow Us :{" "}
             </p>
-            <div className="flex items-center gap-5">
+            {/* <div className="flex items-center gap-5">
               {socialMediaLinks?.map((link) => (
                 <a
                   href={link.url}
@@ -35,7 +36,8 @@ const Footer = () => {
                   />
                 </a>
               ))}
-            </div>
+            </div> */}
+            <SocialIcons/>
           </div>
         </div>
 
