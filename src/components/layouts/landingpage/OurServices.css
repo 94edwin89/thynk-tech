@@ -570,14 +570,14 @@ body {
 }
 
 .swiper-slide__block .main__subtitle, .swiper-slide__block .main__title, .swiper-slide__block .paragraphe {
-  color: #21272b;
+  color: wheat;
   z-index: 2;
   position: relative;
 }
 
 .swiper-slide__block .paragraphe {
   max-width: 413px;
- 
+ color: wheat;
   margin-top: 24px;
 }
 
