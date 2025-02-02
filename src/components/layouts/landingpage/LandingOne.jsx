@@ -33,7 +33,7 @@ function LandingOne() {
           <div className="relative ">
             <img src={landing} alt="Team collaborating" />
 
-            <button className="lg:w-[195px] font-bold lg:h-[65px] absolute bottom-[-1px] right-[-3px] bg-primary text-white py-2 px-4 rounded-md hover:bg-[#28b1eb]">
+            <button className="lg:w-[195px] font-bold lg:h-[65px] absolute bottom-[-1px] right-[-3px] bg-primary text-gray-300 py-2 px-4 rounded-md hover:bg-[#28b1eb]">
               <Link to="/contact-us"> REACH OUT</Link>
             </button>
           </div>
