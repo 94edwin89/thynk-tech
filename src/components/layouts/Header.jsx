@@ -130,7 +130,7 @@ const Header = () => {
         </div>
         <div className="flex gap-5 justify-center items-center">
           <Button>
-            <Link to="/contact-us" onClick={() => window.scrollTo(0,0)}>Contact Us</Link>
+            <Link to="/contact-us" className="text-white" onClick={() => window.scrollTo(0,0)}>Contact Us</Link>
           </Button>
           <TiThMenu
             size={28}

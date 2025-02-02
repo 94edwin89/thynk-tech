@@ -34,11 +34,11 @@ html {
 
 body {
   margin: 0;
-  width: 100dvw;
+  width: 100%;
   height: auto;
 }
 
-a {
+.section__slider a {
   text-decoration: none;
   color: #21272b;
   cursor: pointer;
@@ -443,6 +443,7 @@ body {
   width: 100%;
   height: auto;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .swiper-slide__block .swiper-slide__block__img a {

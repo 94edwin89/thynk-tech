@@ -54,7 +54,7 @@ const Footer = () => {
               {quickLinks?.map((link) => (
                 <li
                   key={link?.title}
-                  className="my-2 hover:text-white font-semibold text-[13px] sm:text-[15px]"
+                  className="my-2 light-text hover:text-white font-semibold text-[13px] sm:text-[15px]"
                 >
                   <Link to={link.url} onClick={() => window.scrollTo(0, 0)}>{link?.title}</Link>
                 </li>
