@@ -1,19 +1,18 @@
 import { useInView } from "react-intersection-observer";
 import "./Expertise.css";
-import Logo from './Logo'
-
+import Logo from './Logo';
 
 function OurExpertise() {
   const { ref, inView } = useInView({
-    triggerOnce: false, // Trigger every time the section comes into view
-    threshold: 0.2, // Trigger when 20% of the element is visible
+    triggerOnce: false,  // Trigger every time the section comes into view
+    threshold: 0.2,      // Trigger when 20% of the element is visible
   });
-
-
 
   return (
     <div
-      className=" relative w-full overflow-hidden"
+      className={`relative w-full overflow-hidden transition-all duration-700 ${
+        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
       ref={ref}
       style={{ backgroundColor: "white" }}
     >
@@ -30,10 +29,10 @@ function OurExpertise() {
         </p>
       </div>
 
-    <div className="mt-10 mb-5">
-      <Logo/>
-    </div>
-     
+      {/* Logo Section */}
+      <div className="mt-10 mb-5">
+        <Logo />
+      </div>
     </div>
   );
 }
