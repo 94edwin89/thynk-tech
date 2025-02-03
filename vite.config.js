@@ -7,8 +7,9 @@ export default defineConfig({
   base: "/",
   build: {
     outDir: "dist",
-    rollupOptions: {
-      external: ["framer-motion"],
-    },
+  },
+  optimizeDeps: {
+    include: ['framer-motion'],
   },
 });
+

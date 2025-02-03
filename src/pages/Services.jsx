@@ -10,7 +10,6 @@ import serviceImg4 from "../assets/images/service_seo.png";
 import serviceDevelopment from "../assets/images/service_development.png";
 
 import { webDevServices } from "../constants/constants";
-import ServiceCard from "../components/services/ServiceCard";
 import ServicesSwiper from "../components/services/ServiceSwiper";
 
 const Services = () => {
