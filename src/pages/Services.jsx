@@ -145,7 +145,7 @@ const generateMotionStyles = (right=false) => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
             >
-              What We've Done
+              What We&apos;ve Done
             </motion.h4>
             <ServicesSwiper webDevServices={webDevServices}/>
           </div>
@@ -173,7 +173,7 @@ const generateMotionStyles = (right=false) => {
               <p className="text-lg dark-text">
               <span className="text-4xl text-primary">A</span>t ThynkTechnologies, we specialize in enhancing your online
                 presence through expert SEO strategies designed to improve your
-                website's ranking on search engines. Our team employs a
+                website&apos;s ranking on search engines. Our team employs a
                 combination of on-page optimization, technical SEO, and quality
                 content strategies to drive organic traffic and increase
                 conversions.
