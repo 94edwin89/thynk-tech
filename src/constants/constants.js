@@ -15,6 +15,9 @@ import webDev2 from "../assets/images/web_dev_2.jpg"
 import webDev3 from "../assets/images/web_dev_3.jpg"
 import webDev4 from "../assets/images/web_dev_4.jpg"
 import webDev5 from "../assets/images/web_dev_5.jpg"
+import webDev6 from "../assets/images/web_dev_6.jpg"
+import webDev7 from "../assets/images/web_dev_7.jpg"
+import webDev8 from "../assets/images/web_dev_8.jpg"
 
 export const headerLinks = [
   {
@@ -143,12 +146,32 @@ export const webDevServices = [
     img: webDev2,
     url : "https://www.qualityfishnets.com/"
   },
+
+  {
+    id:5,
+    title : "Fish Booking App",
+    img: webDev6,
+    url : "https://f4fish.com/"
+  },
   
   {
     id:4,
     title : "Rooms Booking App",
     img: webDev5,
     url : "https://the-booking-app.vercel.app/login"
+  },
+ 
+  {
+    id:6,
+    title : "Bezire Digital Marketing",
+    img: webDev7,
+    url : "https://bizireapp.com/"
+  },
+  {
+    id:7,
+    title : "My Travellers Choice",
+    img: webDev8,
+    url : "https://mytravellerschoice.com/"
   },
 
   {

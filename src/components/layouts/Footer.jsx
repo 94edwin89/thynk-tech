@@ -20,7 +20,7 @@ const Footer = () => {
           <Logo footer={true}/>
           {/* follow us */}
           <div className="flex items-center gap-8">
-            <p className="uppercase light-text font-semibold hover:text-white">
+            <p className="uppercase light-text font-semibold hover:text-white mt-3">
               Follow Us :{" "}
             </p>
             {/* <div className="flex items-center gap-5">

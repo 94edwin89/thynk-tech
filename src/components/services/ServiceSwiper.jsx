@@ -13,8 +13,8 @@ const ServicesSwiper = ({ webDevServices }) => {
         modules={[Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
-        pagination={{ clickable: true }}
-        navigation={true}
+        // pagination={{ clickable: true }}
+        // navigation={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
