@@ -88,7 +88,7 @@ const Footer = () => {
               <li className="flex gap-2 my-2 hover:text-white text-[15px]">
                 <img src={indFlag} alt="India Flag" />
                 <a href="tel:+914844026866" className="hover:text-white">
-                  +91 94008 01182
+                +91 8075357071
                 </a>
               </li>
 

@@ -75,7 +75,7 @@ const ContactUs = () => {
                 marginRight: "0.5rem",
               }}
             />
-            +91 9400801182
+            +91 8075357071
           </p>
           <p className="font-medium mt-8 text-gray-500">Email</p>
           <p>info@thynktechnologies.com</p>
