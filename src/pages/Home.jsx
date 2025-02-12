@@ -28,7 +28,7 @@ function Home() {
           property="og:image"
           content="https://thynktechnologies.com/images/banner.png"
         />
-        <meta property="og:url" content="https://thynktechnologies.com/services" />
+        <meta property="og:url" content="https://thynktechnologies.com" />
         <meta name="twitter:card" content="https://thynktechnologies.com/images/banner.png" />
         <meta
           name="twitter:title"
