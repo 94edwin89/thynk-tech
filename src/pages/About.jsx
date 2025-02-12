@@ -41,7 +41,7 @@ const About = () => {
           property="og:image"
           content="https://thynktechnologies.com/images/banner.png"
         />
-        <meta property="og:url" content="https://yourwebsite.com/about-us" />
+        <meta property="og:url" content="https://thynktechnologies.com/about-us" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
