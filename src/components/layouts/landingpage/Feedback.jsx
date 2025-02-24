@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import feedback1 from "/src/assets/images/web_dev_1.jpg"
+import feedback2 from "/src/assets/images/web_dev_2.jpg"
+import feedback3 from "/src/assets/images/web_dev_5.jpg"
+import feedback4 from "/src/assets/images/web_dev_8.jpg"
+import godsonShaji from  "/src/assets/images/feedback/IMG_9851.JPG"
+
 
 const feedbacks = [
   {
@@ -8,10 +14,10 @@ const feedbacks = [
     brand: "POPPIE HAIR AND MAKEUP",
     name: "GODSON SHAJI",
     role: "Hair & Makeup Artist",
-    image: "/src/assets/images/feedback/IMG_9851.JPG",
+    image:godsonShaji,
     feedback:
       "As a hair and makeup artist, I know the power of a flawless presentation, and your portfolio reflects just that! The clean design, elegant visuals, and user-friendly interface make it a masterpiece.",
-    portfolioImage: "/src/assets/images/web_dev_1.jpg",
+    portfolioImage: feedback1,
   },
   {
     id: 2,
@@ -21,7 +27,7 @@ const feedbacks = [
     image: "/src/assets/images/feedback/IMG_9852.JPG",
     feedback:
       "Your website design is absolutely stunning! It flows beautifully, is easy to navigate, and presents your work in an elegant way. Truly an outstanding showcase of your skills!",
-    portfolioImage: "/src/assets/images/web_dev_2.jpg",
+    portfolioImage: feedback2,
   },
   {
     id: 3,
@@ -31,7 +37,7 @@ const feedbacks = [
     image: "/src/assets/images/feedback/IMG_9853.JPG",
     feedback:
       "The room booking website offers a seamless and hassle-free experience with an intuitive design that makes reservations effortless. Navigation is smooth, allowing users to find and book their ideal stay quickly. With a secure and user-friendly interface, the platform ensures a stress-free booking process.",
-    portfolioImage: "/src/assets/images/web_dev_5.jpg",
+    portfolioImage: feedback3,
   },
   {
     id: 4,
@@ -41,7 +47,7 @@ const feedbacks = [
     image: "/src/assets/images/feedback/IMG_9854.JPG",
     feedback:
       "Your web development skills are truly impressive! The website is beautifully designed, highly responsive, and offers a seamless user experience. The attention to detail, smooth navigation, and flawless functionality showcase your expertise and creativity.",
-    portfolioImage: "/src/assets/images/web_dev_8.jpg",
+    portfolioImage: feedback4,
   },
 ];
 
