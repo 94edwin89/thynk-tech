@@ -6,9 +6,9 @@ import feedback2 from "../../../assets/images/web_dev_2.jpg";
 import feedback3 from "../../../assets/images/web_dev_5.jpg";
 import feedback4 from "../../../assets/images/web_dev_8.jpg";
 import godsonShaji from "../../../assets/images/feedback/IMG_9851.JPG";
-import sooraj from "../../../assets/images/feedback/IMG_9852.JPG";
-import markDavis from "../../../assets/images/feedback/IMG_9853.JPG";
-import lisaBrown from "../../../assets/images/feedback/IMG_9854.JPG";
+import sooraj from "../../../assets/images/feedback/IMG_9851.JPG";
+import markDavis from "../../../assets/images/feedback/IMG_9851.JPG";
+import lisaBrown from "../../../assets/images/feedback/IMG_9851.JPG";
 
 const feedbacks = [
   {
