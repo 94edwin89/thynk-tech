@@ -3,6 +3,7 @@ import LandingOne from "../components/layouts/landingpage/LandingOne";
 import LandingSecond from "../components/layouts/landingpage/LandingSecond";
 import OurExpetise from "../components/layouts/landingpage/OurExpetise";
 import OurServices from "../components/layouts/landingpage/OurServices";
+import Feedback from "../components/layouts/landingpage/Feedback";
 
 function Home() {
   return (
@@ -47,6 +48,7 @@ function Home() {
       <LandingSecond />
       <OurExpetise />
       <OurServices />
+      <Feedback/>
     </>
   );
 }
