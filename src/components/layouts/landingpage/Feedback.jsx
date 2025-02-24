@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import feedback1 from "../assets/images/web_dev_1.jpg"
-import feedback2 from "../assets/images/web_dev_2.jpg"
-import feedback3 from "../assets/images/web_dev_5.jpg"
-import feedback4 from "../assets/images/web_dev_8.jpg"
-import godsonShaji from  "../assets/images/feedback/IMG_9851.JPG"
+import feedback1 from "../../../assets/images/web_dev_1.jpg"
+import feedback2 from "../../../assets/images/web_dev_2.jpg"
+import feedback3 from "../../../assets/images/web_dev_5.jpg"
+import feedback4 from "../../../assets/images/web_dev_8.jpg"
+import godsonShaji from  "../../../assets/images/feedback/IMG_9851.JPG"
 
 
 const feedbacks = [
