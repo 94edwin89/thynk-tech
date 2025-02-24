@@ -26,7 +26,7 @@ const feedbacks = [
     brand: "QUALITY FISH NETS",
     name: "SOORAJ",
     role: "Fishing Net Manufacturer",
-    image: sooraj,
+    image: "https://xsgames.co/randomusers/avatar.php?g=male",
     feedback:
       "Your website design is absolutely stunning! It flows beautifully, is easy to navigate, and presents your work in an elegant way. Truly an outstanding showcase of your skills!",
     portfolioImage: feedback2,
@@ -36,7 +36,7 @@ const feedbacks = [
     name: "MARK DAVIS",
     brand: "The wild Oasis",
     role: "Resort room bookings",
-    image: markDavis,
+    image: "https://xsgames.co/randomusers/avatar.php?g=male",
     feedback:
       "The room booking website offers a seamless and hassle-free experience with an intuitive design that makes reservations effortless. Navigation is smooth, allowing users to find and book their ideal stay quickly. With a secure and user-friendly interface, the platform ensures a stress-free booking process.",
     portfolioImage: feedback3,
@@ -46,7 +46,7 @@ const feedbacks = [
     name: "LISA BROWN",
     brand: "Traveller's choice",
     role: "travel & tourism",
-    image: lisaBrown,
+    image: "https://xsgames.co/randomusers/avatar.php?g=female",
     feedback:
       "Your web development skills are truly impressive! The website is beautifully designed, highly responsive, and offers a seamless user experience. The attention to detail, smooth navigation, and flawless functionality showcase your expertise and creativity.",
     portfolioImage: feedback4,
