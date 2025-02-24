@@ -74,7 +74,7 @@ const Feedback = () => {
       </h2>
       <h1 className="text-center text-6xl">What they are talking about us</h1>
 
-      {/* Feedback Cards with Animation */}
+      {/* Feedback Cards with slow Animation */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <AnimatePresence>
           {feedbacks.slice(0, visible).map((feedback) => (
