@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import feedback1 from "../../../assets/images/web_dev_1.jpg"
-import feedback2 from "../../../assets/images/web_dev_2.jpg"
-import feedback3 from "../../../assets/images/web_dev_5.jpg"
-import feedback4 from "../../../assets/images/web_dev_8.jpg"
-import godsonShaji from  "../../../assets/images/feedback/IMG_9851.JPG"
-
+import feedback1 from "../../../assets/images/web_dev_1.jpg";
+import feedback2 from "../../../assets/images/web_dev_2.jpg";
+import feedback3 from "../../../assets/images/web_dev_5.jpg";
+import feedback4 from "../../../assets/images/web_dev_8.jpg";
+import godsonShaji from "../../../assets/images/feedback/IMG_9851.JPG";
+import sooraj from "../../../assets/images/feedback/IMG_9852.JPG";
+import markDavis from "../../../assets/images/feedback/IMG_9853.JPG";
+import lisaBrown from "../../../assets/images/feedback/IMG_9854.JPG";
 
 const feedbacks = [
   {
@@ -14,7 +16,7 @@ const feedbacks = [
     brand: "POPPIE HAIR AND MAKEUP",
     name: "GODSON SHAJI",
     role: "Hair & Makeup Artist",
-    image:godsonShaji,
+    image: godsonShaji,
     feedback:
       "As a hair and makeup artist, I know the power of a flawless presentation, and your portfolio reflects just that! The clean design, elegant visuals, and user-friendly interface make it a masterpiece.",
     portfolioImage: feedback1,
@@ -24,7 +26,7 @@ const feedbacks = [
     brand: "QUALITY FISH NETS",
     name: "SOORAJ",
     role: "Fishing Net Manufacturer",
-    image: "/src/assets/images/feedback/IMG_9852.JPG",
+    image: sooraj,
     feedback:
       "Your website design is absolutely stunning! It flows beautifully, is easy to navigate, and presents your work in an elegant way. Truly an outstanding showcase of your skills!",
     portfolioImage: feedback2,
@@ -34,7 +36,7 @@ const feedbacks = [
     name: "MARK DAVIS",
     brand: "The wild Oasis",
     role: "Resort room bookings",
-    image: "/src/assets/images/feedback/IMG_9853.JPG",
+    image: markDavis,
     feedback:
       "The room booking website offers a seamless and hassle-free experience with an intuitive design that makes reservations effortless. Navigation is smooth, allowing users to find and book their ideal stay quickly. With a secure and user-friendly interface, the platform ensures a stress-free booking process.",
     portfolioImage: feedback3,
@@ -44,7 +46,7 @@ const feedbacks = [
     name: "LISA BROWN",
     brand: "Traveller's choice",
     role: "travel & tourism",
-    image: "/src/assets/images/feedback/IMG_9854.JPG",
+    image: lisaBrown,
     feedback:
       "Your web development skills are truly impressive! The website is beautifully designed, highly responsive, and offers a seamless user experience. The attention to detail, smooth navigation, and flawless functionality showcase your expertise and creativity.",
     portfolioImage: feedback4,
