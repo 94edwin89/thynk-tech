@@ -9,8 +9,7 @@ export default defineConfig({
     outDir: "dist",
   },
   optimizeDeps: {
-    include: ['framer-motion'],
+    include: ["framer-motion"],
   },
-  assetsInclude: ['**/*.JPG'], 
+  assetsInclude: ["**/*.JPG", "**/*.jpg"],
 });
-
