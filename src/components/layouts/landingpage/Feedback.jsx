@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import feedback1 from "../../../assets/images/web_dev_1.jpg";
 import feedback2 from "../../../assets/images/web_dev_2.jpg";
 import feedback3 from "../../../assets/images/web_dev_5.jpg";
 import feedback4 from "../../../assets/images/web_dev_8.jpg";
 import godsonShaji from "../../../assets/images/feedback/IMG_9851.JPG";
-import sooraj from "../../../assets/images/feedback/IMG_9852.jpg";
-import markDavis from "../../../assets/images/feedback/IMG_9854.jpg";
+import sooraj from "../../../assets/images/feedback/IMG_9854.jpg";
+import markDavis from "../../../assets/images/feedback/IMG_9852.jpg";
 import lisaBrown from "../../../assets/images/feedback/IMG_9853.jpg";
 
 const feedbacks = [
@@ -54,99 +53,76 @@ const feedbacks = [
 ];
 
 const Feedback = () => {
-  const [visible, setVisible] = useState(2);
-  const [rotated, setRotated] = useState(false);
+  const [index, setIndex] = useState(0);
 
-  const handleLoadMore = () => {
-    setRotated(true);
-    setTimeout(() => setRotated(false), 1000);
-    setVisible((prev) => prev + 2);
-  };
-
-  const handleShowLess = () => {
-    setRotated(true);
-    setTimeout(() => setRotated(false), 1000);
-    setVisible(2);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 2) % feedbacks.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="w-full h-full p-6 bg-gray-100">
       <h2 className="text-primary text-2xl font-thin text-center mb-6">
         Testimonials
       </h2>
-      <h1 className="text-center text-6xl">What they are talking about us</h1>
-
-      {/* Feedback Cards with slow Animation */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <AnimatePresence>
-          {feedbacks.slice(0, visible).map((feedback) => (
-            <motion.div
-              key={feedback.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ duration: 1.2 }} // Slower transition
-              className="bg-white shadow-md rounded-lg overflow-hidden flex w-full h-[250px]"
-            >
-              {/* Left Side - Image */}
-              <div className="w-1/3 h-full">
-                <img
-                  className="h-full w-full object-cover"
-                  src={feedback.portfolioImage}
-                  alt="Portfolio"
-                />
-              </div>
-
-              {/* Right Side - Content */}
-              <div className="w-2/3 p-4 flex flex-col justify-between">
-                <span>{feedback.brand}</span>
-                <hr className="border-primary" />
-                <h2 className="text-md text-center pt-2 font-thin text-gray-800">
-                  &quot;{feedback.feedback}&quot;
-                </h2>
-                <hr className="border-primary" />
-                <div className="flex items-center mt-3 text-sm text-gray-500">
-                  <img
-                    className="w-6 h-6 rounded-full mr-2"
-                    src={feedback.image}
-                    alt={feedback.name}
-                  />
-                  <span className="font-medium">{feedback.name}</span>
-                  <span className="mx-2">•</span>
-                  <span className="text-xs">{feedback.role}</span>
+      <h1 className="text-center font-thin text-6xl">What they are talking about us</h1>
+      <div className="overflow-hidden w-full relative">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ x: "100%" }}
+            animate={{ x: "0%" }}
+            exit={{ x: "-100%" }}
+            transition={{ duration: 1 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
+            {feedbacks.slice(index, index + 2).map((feedback) => (
+              <div
+                key={feedback.id}
+                className="bg-white shadow-md rounded-lg overflow-hidden flex w-full h-[250px]"
+              >
+                <div className="w-1/3 h-full">
+                  <div className="flex items-center flex-col mt-3 text-sm text-gray-500">
+                    <img
+                      className="w-40 h-40 rounded-full mr-2"
+                      src={feedback.image}
+                      alt={feedback.name}
+                    />
+                    <span className="font-medium">{feedback.name}</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-xs">{feedback.role}</span>
+                  </div>
+                </div>
+                <div className="w-2/3 p-4 flex flex-col justify-between">
+                  <span className="text-center">{feedback.brand}</span>
+                  <hr />
+                  <h2 className="text-md text-center  font-thin text-gray-800">
+                    &quot;{feedback.feedback}&quot;
+                  </h2>
+                  <hr />
                 </div>
               </div>
-            </motion.div>
-          ))}
+            ))}
+          </motion.div>
         </AnimatePresence>
-      </div>
-
-      {/* Load More & Show Less Buttons */}
-      <div className="flex justify-center mt-6 space-x-4">
-        {visible < feedbacks.length && (
-          <button
-            onClick={handleLoadMore}
-            className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition flex items-center justify-center"
-          >
-            <FaChevronDown
-              className={`text-lg transform transition-transform duration-1000 ${
-                rotated ? "rotate-180" : ""
-              }`}
-            />
-          </button>
-        )}
-        {visible > 2 && (
-          <button
-            onClick={handleShowLess}
-            className="p-3 bg-gray-600 text-white rounded-full hover:bg-gray-700 transition flex items-center justify-center"
-          >
-            <FaChevronUp
-              className={`text-lg transform transition-transform duration-1000 ${
-                rotated ? "rotate-180" : ""
-              }`}
-            />
-          </button>
-        )}
+        {/* Indicator Dots */}
+        <br />
+        <br />
+        <br />
+        <div className="flex justify-center mt-4 space-x-2 absolute bottom-2 left-1/2 transform -translate-x-1/2">
+          {Array.from({ length: Math.ceil(feedbacks.length / 2) }).map(
+            (_, i) => (
+              <div
+                key={i}
+                className={`w-3 h-3 rounded-full ${
+                  index / 2 === i ? "bg-gray-600" : "bg-gray-400"
+                }`}
+              ></div>
+            )
+          )}
+        </div>
       </div>
     </div>
   );

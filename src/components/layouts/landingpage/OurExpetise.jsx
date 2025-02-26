@@ -1,6 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import "./Expertise.css";
 import Logo from './Logo';
+import String from './String'
 
 function OurExpertise() {
   const { ref, inView } = useInView({
@@ -32,6 +33,10 @@ function OurExpertise() {
       {/* Logo Section */}
       <div className="mt-10 mb-5">
         <Logo />
+        
+      </div>
+      <div>
+        <String/>
       </div>
     </div>
   );
